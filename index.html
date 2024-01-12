@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Шрифты -->
+  <link rel="stylesheet" href="fonts/American/stylesheet.css" />
+  <link rel="stylesheet" href="fonts/PT ui/stylesheet.css" />
+  <!-- Мой css -->
+
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header>
+      <!-- menu -->
+      <section class="header_menu">
+        <div class="container">
+          <div class="header_menu_inner">
+            <div class="header_logo">
+              <a href="index.html"><img src="images/header/logo.svg" alt="" /></a>
+            </div>
+            <ul class="header_list">
+              <li class="header_list_item">
+                <a href="" class="header_list_link link">Видеокарты</a>
+              </li>
+              <li class="header_list_item">
+                <a href="" class="header_list_link">Процессоры</a>
+              </li>
+              <li class="header_list_item">
+                <a href="" class="header_list_link">Игры</a>
+              </li>
+              <li class="header_list_item">
+                <a href="" class="header_list_link">Статистика</a>
+              </li>
+
+              <a href="#" class="close_mobile_toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" version="1.1" viewBox="0 0 752 752">
+                  <path
+                    d="m540.34 211.67c-8.5234-8.5234-21.785-8.5234-30.309 0l-134.03 134.02-134.02-134.02c-8.5234-8.5234-21.785-8.5234-30.309 0-8.5234 8.5234-8.5234 21.785 0 30.309l134.02 134.02-134.02 134.02c-8.5234 8.5234-8.5234 21.785 0 30.309 4.2617 4.2617 9.4727 6.1562 15.156 6.1562 5.6836 0 10.891-1.8945 15.156-6.1562l134.02-134.02 134.02 134.02c4.2617 4.2617 9.4727 6.1562 15.156 6.1562 5.6836 0 10.891-1.8945 15.156-6.1562 8.5234-8.5234 8.5234-21.785 0-30.309l-134.02-134.03 134.02-134.02c8.0508-8.5234 8.0508-21.785 0-30.309z"
+                    fill="#d2d2d2" />
+                </svg>
+              </a>
+            </ul>
+            <div class="header_search">
+              <form action="">
+                <div class="search">
+                  <input type="text" class="input_search" placeholder="Поиск" />
+                  <img src="images/content/search-icon.svg" alt="" class="search_icon" />
+                </div>
+              </form>
+            </div>
+
+            <a href="#" class="mobile_open_toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" version="1.1" viewBox="0 0 752 752">
+                <g fill="#d2d2d2">
+                  <path
+                    d="m213.21 287.2h325.59c15.863 0 30.52-8.4609 38.453-22.195 7.9297-13.738 7.9297-30.664 0-44.398-7.9336-13.738-22.59-22.199-38.453-22.199h-325.59c-15.859 0-30.52 8.4609-38.449 22.199-7.9297 13.734-7.9297 30.66 0 44.398 7.9297 13.734 22.59 22.195 38.449 22.195z" />
+                  <path
+                    d="m538.79 331.6h-325.59c-15.859 0-30.52 8.4648-38.449 22.199-7.9297 13.738-7.9297 30.664 0 44.398 7.9297 13.738 22.59 22.199 38.449 22.199h325.59c15.863 0 30.52-8.4609 38.453-22.199 7.9297-13.734 7.9297-30.66 0-44.398-7.9336-13.734-22.59-22.199-38.453-22.199z" />
+                  <path
+                    d="m538.79 464.8h-325.59c-15.859 0-30.52 8.4648-38.449 22.199-7.9297 13.738-7.9297 30.664 0 44.398 7.9297 13.738 22.59 22.199 38.449 22.199h325.59c15.863 0 30.52-8.4609 38.453-22.199 7.9297-13.734 7.9297-30.66 0-44.398-7.9336-13.734-22.59-22.199-38.453-22.199z" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- banner -->
+      <section class="header_banner">
+        <div class="container">
+          <div class="header_banner_inner">
+            <div class="banner_text">
+              <h1>
+                Сравнение <br />
+                видеокарт
+              </h1>
+              <h3 class="subtitle">
+                Сравнения, спецификации и рейтинги видеокарт
+              </h3>
+            </div>
+            <div class="banner_img">
+              <img src="images/content/vd.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- == form section == -->
+      <section class="form">
+        <div class="container">
+          <form action="">
+            <div class="form_inner">
+              <ul class="tab_list">
+                <li data-tab-target="#video-card" class="tab_list_item active">
+                  <img src="images/content/tab-1.svg" alt="" class="tab_item_img active" />
+                  Видеокарты
+                </li>
+                <li data-tab-target="#processors" class="tab_list_item">
+                  <img src="images/content/tab-2.svg" alt="" class="tab_item_img" />
+                  Процессоры
+                </li>
+                <li data-tab-target="#game" class="tab_list_item">
+                  <img src="images/content/tab-3.svg" alt="" class="tab_item_img" />
+                  Пойдет ли игра
+                </li>
+              </ul>
+              <div class="tab_compare_content">
+                <div id="video-card" class="tab_content_item active">
+                  <div class="tab_item_selects">
+                    <div class="select_item">
+                      <input type="text" class="search_tab" placeholder="  Выберите GPU..">
+                      <div class="select_name">
+                        <img src="images/content/vd-icon.svg" alt="" />
+
+                      </div>
+                      <a href="#">
+                        Посмотреть
+                        <img src="images/content/dropdown-icon.svg" alt="" />
+                      </a>
+                      <ul class="select_list">
+                        <li value=""><a href="#">Intel Core i5-4670K</a></li>
+                        <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                        <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                        <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                      </ul>
+                    </div>
+                    <div class="vs">vs</div>
+                    <div class="select_item">
+                      <input type="text" class="search_tab" placeholder="  Выберите GPU..">
+                      <div class="select_name">
+                        <img src="images/content/vd-icon.svg" alt="" />
+
+                      </div>
+                      <a href="#">
+                        Посмотреть
+                        <img src="images/content/dropdown-icon.svg" alt="" />
+                      </a>
+                      <ul class="select_list">
+                        <li value=""><a href="#">Intel Core i5-4670K</a></li>
+                        <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                        <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                        <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab_item_action">
+                    <a href="#" class="button button_gradient">Сравнить</a>
+                  </div>
+                </div>
+                <div id="processors" class="tab_content_item">
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quaerat possimus odio tempora minus
+                    natus sapiente, repudiandae quasi sequi culpa dolor enim nam a quo perspiciatis pariatur itaque
+                    dolorum. Accusantium!
+                  </p>
+
+                </div>
+                <div id="game" class="tab_content_item">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quaerat possimus odio tempora minus
+                    natus sapiente, repudiandae quasi sequi culpa dolor enim nam a quo perspiciatis pariatur itaque
+                    dolorum. Accusantium!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quaerat possimus odio tempora minus
+                    natus sapiente, repudiandae quasi sequi culpa dolor enim nam a quo perspiciatis pariatur itaque
+                    dolorum. Accusantium!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quaerat possimus odio tempora minus
+                    natus sapiente, repudiandae quasi sequi culpa dolor enim nam a quo perspiciatis pariatur itaque
+                    dolorum. Accusantium!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- == games == -->
+      <section class="games">
+        <div class="container">
+          <div class="games_inner">
+            <h2>Запустятся ли на твоем ПК эти популярные игры?</h2>
+            <div class="game_items">
+              <a class="game_item" href="#" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-1.png" alt="" />
+                  <div class="game_date">2020</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Cyberpunk 2077</div>
+                  <div class="game_rep">3.8 / 5</div>
+                </div>
+
+
+              </a>
+
+              <a class="game_item" href="#" href="">
+                <div class="game_img">
+                  <img src="images/content/item-2.png" alt="" />
+                  <div class="game_date">2020</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Cyberpunk 2077</div>
+                  <div class="game_rep">3.8 / 5</div>
+                </div>
+              </a>
+
+              <a class="game_item" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-3.png" alt="" />
+                  <div class="game_date">2020</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Cyberpunk 2077</div>
+                  <div class="game_rep">3.8 / 5</div>
+                </div>
+              </a>
+
+              <a class="game_item" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-4.png" alt="" />
+                  <div class="game_date">2019</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Red Dead Redemption 2</div>
+                  <div class="game_rep">3.8 / 5</div>
+                </div>
+              </a>
+
+              <a class="game_item" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-5.png" alt="" />
+                  <div class="game_date">2012</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Ведьмак 3: Дикая Охота</div>
+                  <div class="game_rep">4.5 / 5</div>
+                </div>
+              </a>
+
+              <a class="game_item" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-6.png" alt="" />
+                  <div class="game_date">2017</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Fortnite</div>
+                  <div class="game_rep">3.8 / 5</div>
+                </div>
+              </a>
+
+              <a class="game_item" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-7.png" alt="" />
+                  <div class="game_date">2021</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Forza Horizon 5</div>
+                  <div class="game_rep">4.5 / 5</div>
+                </div>
+              </a>
+
+              <a class="game_item" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-8.png" alt="" />
+                  <div class="game_date">2020</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Metro Exodus</div>
+                  <div class="game_rep">4.5 / 5</div>
+                </div>
+              </a>
+
+              <a class="game_item" href="#">
+                <div class="game_img">
+                  <img src="images/content/item-9.png" alt="" />
+                  <div class="game_date">2013</div>
+                </div>
+                <div class="game_text">
+                  <div class="game_name">Call Of Duty: Warzone</div>
+                  <div class="game_rep">3.8 / 5</div>
+                </div>
+              </a>
+
+              <div class="game_action">
+                <a class="button button_light">Смотреть ещё</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer_languages">
+        <div class="container">
+          <div class="footer_languages_inner">
+            <div class="footer_languages_logo">
+              <img src="images/header/logo.svg" alt="" />
+            </div>
+            <div class="footer_languages_list">
+              <ul class="languages_list">
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Русский</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">English</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Español</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Português</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Deutsch</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Français</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Italiano</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Polski</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rules">
+        <div class="container">
+          <div class="rules_inner">
+            <div class="rules_links">
+              <a href="" class="rules_link">О сайте</a>
+              <a href="" class="rules_link">Политика конфиденциальности</a>
+            </div>
+            <div class="rules_text">
+              Нашли ошибку? Выделите её и нажмите Ctrl+Enter. <br> Игры
+              протестированы <a href="#" class="rules_link rules_link_small">notebookcheck.net</a> <br> Наши партнёры:
+              каталог
+              инструкций <a href="#" class="rules_link rules_link_underline">emanuals.org</a> , справочник организаций
+              <a href="#" class="rules_link">otzywy.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Jquery -->
+  <script src="libs/jquery-3.6.0.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

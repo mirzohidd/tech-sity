@@ -1,0 +1,1538 @@
+// GENERAL STYLES
+.header_title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+
+    @media #{$tab_device} {
+        font-size: 31px;
+    }
+    
+}
+.header_gta_title {
+    margin-bottom: 0;
+    padding-bottom: 37px;
+
+    @media #{$tablet_device} {
+        font-size: 31px;
+    }
+
+    @media #{$tab_device} {
+        font-size: 27px;
+        padding-bottom: 15px;
+    }
+}
+.header_videocard_title {
+    @media #{$mobile_device} {
+        line-height: 36px;
+    }
+}
+.header_subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 92px;
+    max-width: 90%;
+}
+
+.header_videocard_subtitle {
+    @media #{$tablet_device} {
+        padding-bottom: 45px;
+    }
+    @media #{$tab_device} {
+        padding-bottom: 45px;
+    }
+    @media #{$mobile_device} {
+        padding-bottom: 25px;
+    }
+}
+
+.header_menu_rating {
+    margin-bottom: 40px !important;
+}
+.header_computer_title {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+
+    @media #{$tab_device} {
+        font-size: 31px;
+        padding-bottom: 15px;
+    }
+
+    @media #{$smallmobile_device} {
+        font-size: 27px;
+    }
+}
+.rating_general {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 12px;
+
+    @media #{$tablet_device} {
+        font-size: 13px;
+    }
+}
+.gta_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+    @media #{$tablet_device} {
+        font-size: 25px;
+    }
+
+    @media #{$tab_device} {
+        font-size: 19px;
+        line-height: 30px;
+        margin-bottom: 10px !important;
+    }
+}
+.gta_description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 19px;
+}
+
+.computer_left {
+    flex: 0 0 48%;
+
+    @media #{$mobile_device} {
+        flex: 0 0 59%;
+    }
+
+    .computer_item {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 4px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media #{$mobile_device} {
+            font-size: 13px;
+        }
+    }
+}
+.computer_right {
+    flex: 0 0 52%;
+
+    @media #{$tab_device} {
+        flex: 0 0 41%;
+    }
+
+    .computer_item {
+        & > a {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 21px;
+            color: #875BE4;
+            margin-bottom: 4px;
+            
+            @media #{$mobile_device} {
+                font-size: 13px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+    }
+}
+
+.computer_bottom_item {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 4px;
+
+    @media #{$mobile_device} {
+        font-size: 13px;
+    }
+}
+.computer_bottom_item {
+    margin-bottom: 4px;
+    & > a {
+       font-weight: 500;
+       font-size: 15px;
+       line-height: 21px;
+       color: #00D23B;
+
+        @media #{$mobile_device} {
+            font-size: 13px;
+        }
+    }
+}
+
+.computer_flex,
+.computer_bottom_flex,
+.low_preset_flex,
+.medium_preset_flex,
+.high_preset_flex,
+.processor_intel_flex {
+    @media #{$tab_device} {
+        justify-content: space-between;
+    }
+}
+.container {
+    @media #{$smallmobile_device} {
+        padding: 0px 5px;
+    }
+}
+
+
+// /GENERAL STYLES
+
+// RATING_VIDEOCARD
+.rating_main {
+    padding-bottom: 0; 
+    .rating {
+        .container {
+            .rating_box {
+                transform: translateY(-63px);
+
+                @media #{$tab_device} {
+                    overflow-x: scroll;
+                }
+                .rating_top {
+                    display: flex;
+                    justify-content: space-between;
+                    color: rgba(0, 0, 0, 0.7);
+                    padding: 21px 60px;
+                    background-color: #EFF3F6;
+                    border-radius: 7px 7px 0px 0px;
+
+                    @media #{$tablet_device} {
+                        padding: 21px 25px;
+                    }
+                    
+                    @media #{$tab_device} {
+                        padding: 21px 20px;
+                        width: 757px;
+                    }
+                    .rating_top_left {
+                        display: flex;
+                        & > div {
+                            margin-right: 23px;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 21px;
+                        }
+                        & > div:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    .rating_top_right {
+                        display: flex;
+                        justify-content: space-between;
+                        flex: 0 0 60%;
+
+                        @media #{$tab_device} {
+                            flex: 0 0 56%;
+                        }
+
+                        & > div {
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 21px;
+
+                            @media #{$tablet_device} {
+                                font-size: 13px;
+                            }
+                        }
+                        & > div:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                .rating_bottom {
+                    display: flex;
+                    padding: 23px 60px 53px 60px;
+                    background: #FFFFFF;
+                    border: 1px solid rgba(255, 255, 255, 0.05);
+                    border-radius:0 0 7px 7px;
+
+                    @media #{$tablet_device} {
+                        padding: 23px 25px 25px 25px;
+                    }
+
+                    @media #{$tab_device} {
+                        padding: 23px 20px 20px 20px;
+                        width: 755px;
+                    }
+
+                    @media #{$smallmobile_device} {
+                        padding: 15px 20px 20px 20px;
+                    }
+                    
+                    .rating_bottom_left {
+                        display: flex;
+                        flex: 0 0 40%;
+
+                        @media #{$tab_device} {
+                            flex: 0 0 44%;
+                        }
+    
+                        .rating_bottom_number {
+                            margin-right: 26px;
+
+                            @media #{$tablet_device} {
+                                margin-right: 20px;
+                            }
+                            @media #{$tab_device} {
+                                margin-right: 20px;
+                            }
+                            @media #{$smallmobile_device} {
+                                margin-right: 16px;
+                            }
+                        }
+                        .rtx_flex {
+                            display: flex;
+                            
+                            .rtx {
+                                margin-right: 9px;
+                            }
+                            
+    
+                            .rating_nv {
+                                font-weight: 700;
+    
+                                & > a {
+                                    color: #5F80F2;
+                                }
+                            }
+                            
+                            
+                        }
+                    }
+    
+                    .rating_bottom_right {
+                        display: flex;
+                        justify-content: space-between;
+                        flex: 0 0 60%;
+
+                        @media #{$mid_device} {
+                            flex: 0 0 62%;
+                        }
+
+                        @media #{$tablet_device} {
+                            flex: 0 0 60%;
+                        }
+                        
+                        @media #{$tab_device} {
+                            flex: 0 0 58%;
+                        }
+
+                        .rating_bottom_tv {
+                            
+                            .rx {
+                                margin-bottom: 12px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// /RATING_VIDEOCARD
+
+// GTA HEADER PROGRESS
+.progress {
+    padding-bottom: 21px;
+    @media #{$tab_device}{
+       padding-bottom: 0;
+        
+    }
+    .container {
+        .progress_box {
+            padding: 35px 60px 40px;
+            background: #10131C;
+            border-radius: 0 0 11px 11px;
+            @media #{$tab_device}{
+                padding-bottom: 0;
+
+                
+            }
+            .progress_flex {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media #{$tab_device}{
+                   flex-direction: column;
+                    
+                }
+                .progress_one {
+                    text-align: center;
+                    @media #{$tab_device}{
+                        margin-bottom: 25px;
+                        
+                    }
+                    .progress_img {
+                        margin-bottom: 30px;
+
+                        &:first-of-type{
+                            margin-right: 50px;
+
+                            @media #{$tab_device}{
+                                margin: 0;
+                                
+                            }
+                        }
+                       
+                    }
+
+                    .progress_title {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                    
+                    .progress_desc {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+
+                .progress_two {
+                    text-align: center;
+                    .progress_img {
+                        margin-bottom: 30px;
+                       
+                    }
+
+                    .progress_title {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                    }
+                    
+                    .progress_desc {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+            }
+        }
+    }
+    .tab_content{
+        background-color: #10131C;
+    }
+}
+// /GTA HEADER PROGRESS
+
+// GTA
+.gta_main {
+    .gta_section {
+        .container {
+            .gta_box {
+                padding: 35px 60px 50px 60px;
+                background: #FFFFFF;
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                border-radius: 7px;
+                margin-bottom: 20px;
+
+                @media #{$mid_device} {
+                    padding: 34px 45px 53px 45px;
+                }
+
+                @media #{$tab_device} {
+                    padding: 34px 35px 45px 35px;
+                }
+                @media #{$mobile_device} {
+                    padding: 35px 20px 25px 20px;
+                }
+
+                .gta_games {
+                    margin-bottom: 42px;
+
+                    @media #{$mobile_device} {
+                        margin-bottom: 25px;
+                    }
+                    .gta_top_flex {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 21px;
+
+                        @media #{$mobile_device} {
+                            margin-bottom: 15px;
+                        }
+                        
+                        .gta_game {
+                            margin-right: 18px;
+                        }
+    
+                        & > select {
+                            width: 100%;
+                            padding: 22px 28px;
+                            background: #FFFFFF;
+                            border: 1px solid #EEEEEE;
+                            border-radius: 7px;
+                            appearance: none;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 16px;
+                            background-image: url(../images/shamshod/gta_select.svg);
+                            background-repeat: no-repeat;
+                            background-position: 97% 27px;
+                        }
+                        .gta_select_img {
+                            width: 11px;
+                            height: 8px;
+                            position: absolute;
+                        }
+                    }
+                    
+                    .gta_grand_flex {
+                        display: flex;
+                        align-items: center;
+
+                        @media #{$tablet_device} {
+                            flex-direction: column;
+                            align-items: start;
+                        }
+                        @media #{$tab_device} {
+                            flex-direction: column;
+                            align-items: start;
+                        }
+                        @media #{$mobile_device} {
+                            flex-direction: column;
+                            align-items: start;
+                        }
+    
+                        .gta_grand_left {
+                            flex: 0 0 44%;
+                            
+                            .gta_grand_img {
+                                @media #{$tab_device} {
+                                    width: 100%;
+                                }
+                            }
+
+                            @media #{$tablet_device} {
+                                margin-bottom: 20px;
+                            }
+                            @media #{$tab_device} {
+                                margin-bottom: 15px;
+                            }
+                        }
+                        
+                        .gta_grand_right {
+                            flex: 0 0 56%;
+
+                            @media #{$tablet_device} {
+                                width: 100%;
+                            }
+                            .gta_grand_title {
+                                & > span {
+                                    display: block;
+                                }
+                                margin-bottom: 16px;
+                            }
+                            .gta_data_flex {
+                                display: flex;
+                                justify-content: space-between;
+                                .gta_data_left {
+                                    flex: 0 0 50%;
+                                    .gta_data_item {
+                                        font-weight: 500;
+                                        font-size: 15px;
+                                        line-height: 21px;
+                                        color: #000000;
+                                        margin-bottom: 4px;
+
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                                .gta_data_right {
+                                    flex: 0 0 50%;
+
+                                    @media #{$mobile_device} {
+                                        flex: 0 0 45%;
+                                    }
+                                    .gta_data_item {
+                                        margin-bottom: 4px;
+
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+
+                                        & > a {
+                                            font-weight: 500;
+                                            font-size: 15px;
+                                            line-height: 21px;
+                                            color: #875BE4;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                 // SYSTEM start
+                
+                 .system{
+                    margin-bottom: 51px;
+
+                    @media #{$mobile_device} {
+                        margin-bottom: 25px;
+                    }
+                    .system_requirements_top{
+                        margin-bottom: 26px;
+                        .gta_title{
+                            margin-bottom: 10px;
+                        }
+
+                        .gta_description{
+                            p{
+                                font-weight: 400;
+                                font-size: 15px;
+                                line-height: 21px;
+                                color: rgba(0, 0, 0, 0.7);
+
+                                @media #{$mobile_device} {
+                                    font-size: 14px !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .system_requirements_bottom{
+                        .system_requirements{
+                            margin-bottom: 26px;
+
+                            @media #{$mobile_device} {
+                                margin-bottom: 18px;
+                            }
+
+                            .system_title{
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #000000;
+                                margin-bottom: 16px;
+                            }
+
+                            .systems{
+                                display: flex;
+
+                                @media #{$mobile_device} {
+                                    flex-direction: column;
+                                }
+
+                                .system_left{
+
+                                    @media #{$mobile_device} {
+                                        margin-bottom: 10px;
+                                    }
+                                    ul{
+                                        list-style: none;
+                                        li{
+                                            font-weight: 500;
+                                            font-size: 15px;
+                                            line-height: 21px;
+                                            color: #000000;
+                                            width: 167px;
+                                            margin-right: 82px;
+                                            margin-bottom: 7px;
+
+                                            @media #{$tab_device} {
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .system_right{
+                                    .pc_description{
+                                        display: flex;
+                                        align-items: flex-start;
+                                        p{
+                                            padding-left: 9px;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            color: rgba(0, 0, 0, 0.8);
+                                            padding-bottom: 7px;
+                                        }
+
+                                        #hide{
+                                            opacity: 0;
+                                            visibility: hidden;
+                                        }
+                                    }
+                                   
+                                }
+                            }
+
+                            &:nth-child(2){
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                // SYSTEM end
+            }
+            h2{
+                margin-bottom: 7px;
+            }
+            .subtitle{
+                margin-bottom: 25px;
+            }
+
+        }
+    }
+} 
+// GTA
+
+// YOU VIDEOCARD
+.you_videocard {
+    .you_videocard_top {
+        padding: 0;
+        .gta_title {
+            margin-bottom: 10px;
+        }
+        .gta_description {
+            margin-bottom: 19px;
+        }
+    }
+    .fps{
+        margin-bottom: 13px;
+    }
+    .progress_wrapper {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 22px;
+        margin-bottom: 20px;
+
+        .progress_bar {
+            background: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            border-radius: 7px;
+            .vd {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #ffffff;
+            }
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: 10px;
+        }
+
+        .speed {
+            align-self: center;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &.first {
+            .progress_bar {
+                background-color: #875be4;
+            }
+
+            .speed {
+                color: #875be4;
+                span {
+                    color: #777;
+                    font-size: 13px;
+                }
+            }
+        }
+        &.second {
+            margin-bottom: 32px;
+            .progress_bar {
+                background-color: #41a2e2;
+            }
+            .speed {
+                color: #41a2e2;
+            }
+        }
+    }
+}
+// /YOU VIDEOCARD
+
+// YOUR_PROCESSOR
+.your_processor {
+    padding: 0;
+
+    .your_processor_top  {
+        padding: 0 !important;
+     
+       
+        .fps{
+            margin-bottom: 13px;
+        }
+        .button{
+            margin-top: 0;
+        }
+       
+    }
+}
+// /YOUR_PROCESSOR
+
+// GAME PROCESS
+.game_process {
+    .game_process_top {
+        .gta_title {
+            margin-bottom: 10px;
+        }
+        
+        .game_process_video {
+            padding: 180px 179px;
+            background: #EEEEEE;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            @media #{$mobile_device} {
+                padding: 100px 89px;
+            }
+
+            .game_video {
+                & > a {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #ADADAD;
+                    
+                    @media #{$mobile_device} {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+// /GAME PROCESS
+
+// GAmes
+
+.games{
+    margin:40px 0 50px;
+}
+
+// KOMMENTS
+.kommets {
+    padding: 35px 60px 50px;
+    // margin-top: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+
+    @media #{$tab_device} {
+        padding: 35px 35px 35px;
+    }
+
+    @media #{$mobile_device} {
+        padding: 15px 20px 25px;
+    }
+
+    @media #{$smallmobile_device} {
+
+    }
+
+    .komments_box {
+        .komments_title {
+            margin-bottom: 10px;
+        }
+        .komments_description {
+            margin-bottom: 24px;
+            max-width: 96%;
+
+            @media #{$mobile_device} {
+                font-size: 12px;
+                max-width: 100%;
+            }
+        }
+
+        .form_box {
+            .komments_form {
+                .komments_form_flex {
+                    display: flex;
+                    border-bottom: 1px solid #EEEEEE;
+                    padding-bottom: 40px;
+                    margin-bottom: 35px;
+
+                    @media #{$tab_device} {
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .komments_form_left {
+                        flex: 0 0 7%;
+                        .komments_left_user {
+                            width: 52px;
+                            height: 52px;
+                            background: #FFFFFF;
+                            border: 1px solid #EEEEEE;
+                            border-radius: 131px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    .komments_form_right {
+                        flex: 0 0 93%;
+                        .komments_input_box {
+                            width: 100%;
+                            margin-bottom: 9px;
+                            .komments_input_one {
+                                width: 100%;
+                                background: #FFFFFF;
+                                border: 1px solid #EEEEEE;
+                                border-radius: 7px;
+                                padding: 17px 17px 22px;
+                                box-sizing: border-box;
+
+                                @media #{$mobile_device} {
+                                    &::placeholder {
+                                        font-size: 13px;
+                                    }
+                                    width: 90%;
+                                }
+                                @media #{$smallmobile_device} {
+                                    width: 87%;
+                                }
+                            }
+                        }
+                        .komments_input_flex {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            
+                            @media #{$tablet_device} {
+                                flex-direction: column;
+                            }
+                            @media #{$tab_device} {
+                                flex-direction: column;
+                            }
+                            
+                            .komments_input_two,
+                            .komments_input_three {
+                                width: 100%;
+                                padding: 17px 22px 17px ;
+                                background: #FFFFFF;
+                                border: 1px solid #EEEEEE;
+                                border-radius: 7px;
+                                box-sizing: border-box;
+
+                                @media #{$mobile_device} {
+                                    &::placeholder {
+                                        font-size: 13px;
+                                    }
+                                    width: 90%;
+                                }
+                                @media #{$smallmobile_device} {
+                                    width: 87%;
+                                }
+                            }
+                            .komments_input_box2 {
+                                flex: 0 0 41%;
+
+                                @media #{$tablet_device} {
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                }
+                                @media #{$tab_device} {
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .komments_input_box3 {
+                                flex: 0 0 41%;
+
+                                @media #{$tablet_device} {
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                }
+                                @media #{$tab_device} {
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            .komments_btn_box {
+                                flex: 0 0 14%;
+
+                                @media #{$tablet_device} {
+                                    width: 100%;
+                                }
+
+                                @media #{$tab_device} {
+                                    width: 100%;
+                                    margin-bottom: 10px;
+                                }
+
+                                .komments_form_btn {
+                                    padding: 17.5px 31px;
+                                    background: radial-gradient(18.94% 72.09% at 19.44% 109.3%, #549EE3 0%, rgba(84, 158, 227, 0) 100%), linear-gradient(90deg, #875BE4 0%, #5F80F2 100%);
+                                    border-radius: 7px;
+                                    border: none;
+                                    color: #fff;
+                                    width: 100%;
+                                    box-sizing: border-box;
+
+                                    @media #{$mobile_device} {
+                                        font-size: 13px;
+                                        width: 90%;
+                                    }
+                                    @media #{$smallmobile_device} {
+                                        width: 87%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .komments_bottom_title {
+                        font-size: 20px;
+                    }
+                }       
+            }
+        }
+
+        .form_box2 {
+            .komments_form {
+                .komments_form_flex {
+                    display: flex;
+
+                    &:first-child {
+                        margin-bottom: 18px;
+                    }
+                    .komments_form_left {
+                        flex: 0 0 7%;
+                        .komments_left_user {
+                            width: 52px;
+                            height: 52px;
+                            background: #FFFFFF;
+                            border: 1px solid #EEEEEE;
+                            border-radius: 131px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .komments_form_right {
+                        width: 100%;
+                        .komments_right_top {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 14px;
+    
+                            .desc1 {
+                                font-weight: 500;
+                                font-size: 15px;
+                                line-height: 18px;
+                                color: #222222;
+                                margin-right: 15px;
+                            }
+                            .desc2 {
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #777777;
+                            }
+                        }
+                        .komments_right_bottom {
+                            padding: 21px 0px 20px 22px;
+                            background: rgba(0, 123, 251, 0.05);
+                            border-radius: 7px;
+
+                            & > div {
+                                font-weight: 400;
+                                font-size: 15px;
+                                line-height: 18px;
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            }     
+        }
+    }
+}
+// /KOMMENTS
+
+
+// COMPUTER
+.computer_main {
+
+    .computer_section {
+
+        .computer_box {
+
+            padding: 41px 60px 53px;
+            background: #FFFFFF;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 7px;
+            margin-bottom: 18px;
+
+            @media #{$tablet_device} {
+                padding: 35px 40px 45px;
+            }
+
+            @media #{$tab_device} {
+                padding: 20px 15px 25px;
+            }
+
+            .computer_videocard {
+                margin-bottom: 46px;
+
+                .progress_wrapper {
+                    flex: 0 0 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-right: 22px;
+                    box-sizing: border-box;
+                    margin-bottom: 13px;
+                    .progress_bar {
+                        background: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 25px;
+                        border-radius: 7px;
+                        .vd {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 19px;
+            
+                            color: #ffffff;
+                        }
+                    }
+            
+                    &:not(:last-of-type) {
+                        margin-bottom: 10px;
+                    }
+            
+                    .speed {
+                        align-self: center;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    &.first {
+                        .progress_bar {
+                            background-color: #875be4;
+                        }
+            
+                        .speed {
+                            color: #875be4;
+                            span {
+                                color: #777;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    &.second {
+                        margin-bottom: 32px;
+                        .progress_bar {
+                            background-color: #41a2e2;
+                        }
+                        .speed {
+                            color: #41a2e2;
+                        }
+                    }
+                }
+                .porgresses {
+                    flex: 0 0 100%;
+                    .parts {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        z-index: 2;
+                        width: 60%;
+                        height: 100%;
+                        left: 10%;
+                        span {
+                            width: 1px;
+                            height: 100%;
+                            background-color: #dfdfdf;
+                        }
+                    }
+                }
+                .fps {
+                    display: flex;
+                    align-items: baseline;
+                    flex-wrap: wrap;
+                    margin-bottom: 13px;
+                    justify-content: space-between;
+                    .fps_item {
+                        margin-right: 0;
+        
+                        @media #{$tab_device}{
+                            text-align: center;
+                            flex: 0 0 50%;
+                            margin: 0;
+                            margin-bottom: 20px;
+                        }
+                        &.fps_item_blue{
+                            .fps_resolution{
+                                color: #41a2e2;
+                            }
+                        }
+                        .fps_data {
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 21px;
+                            /* identical to box height, or 175% */
+        
+                            color: #777777;
+                        }
+        
+                        .fps_resolution {
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 21px;
+                            /* identical to box height, or 140% */
+        
+                            color: #875be4;
+                        }
+                    }
+                    &.text_end{
+                       display: flex;
+                       justify-content: end;
+
+                       .fps_item{
+                        margin-right: 80px;
+                       }
+                    }
+                }
+
+                @media #{$tab_device} {
+                    font-size: 14px;
+                    margin-bottom: 35px;
+                }
+
+                @media #{$mobile_device} {
+                    margin-bottom: 25px;
+                }
+
+                .computer_title {
+                    margin-bottom: 21px;
+                }
+
+                .computer_flex {
+                    display: flex;
+                    margin-bottom: 46px;
+
+                    @media #{$tab_device} {
+                        margin-bottom: 30px;
+                    }
+
+                    @media #{$mobile_device} {
+                        margin-bottom: 25px;
+                    }
+                    
+                }
+
+                .compuret_subtitle {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 21px;
+                    color: rgba(0, 0, 0, 0.7);
+                    margin-bottom: 21px;
+
+                    @media #{$tab_device} {
+                        font-size: 14px;
+                    }
+
+                    @media #{$mobile_device} {
+                        font-size: 13px;
+                    }
+                }
+
+                .computer_bottom_flex {
+                    display: flex;
+                    align-items: center;
+
+                    .computer_bottom_left {
+                        flex: 0 0 48%;
+                    }
+
+                    .computer_bottom_right {
+                        flex: 0 0 52%;
+
+                        @media #{$tab_device} {
+                            flex: 0 0 45%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+// /COMPUTER
+
+// LOW PRESET
+.low_preset {
+    margin-bottom: 46px;
+
+    @media #{$tab_device} {
+        margin-bottom: 35px;
+    }
+
+    @media #{$mobile_device} {
+        margin-bottom: 25px;
+    }
+
+    .low_preset_title {
+        margin-bottom: 18px;
+    }
+
+    .low_preset_flex {
+        display: flex;
+        align-items: center;
+    
+        .low_preset_left {
+            flex: 0 0 48%;
+        }
+        .low_preset_right {
+            flex: 0 0 50%;
+
+            @media #{$tab_device} {
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+// /LOW PRESET
+
+// MEDIUM PRESET
+.medium_preset {
+    margin-bottom: 46px;
+
+    @media #{$tab_device} {
+        margin-bottom: 35px;
+    }
+
+    @media #{$mobile_device} {
+        margin-bottom: 25px;
+    }
+    
+    .medium_preset_title {
+        margin-bottom: 18px;
+    }
+    
+    .medium_preset_flex {
+        display: flex;
+        align-items: center;
+    
+        .medium_preset_left {
+            flex: 0 0 48%;
+        }
+        .medium_preset_right {
+            flex: 0 0 50%;
+            
+            @media #{$tab_device} {
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+// /MEDIUM PRESET
+
+// HIGH PRESET
+.high_preset {
+    
+    .high_preset_title {
+        margin-bottom: 18px;
+    }
+    
+    .high_preset_flex {
+        display: flex;
+        align-items: center;
+    
+        .high_preset_left {
+            flex: 0 0 48%;
+        }
+        .high_preset_right {
+            flex: 0 0 50%;
+
+            @media #{$tab_device} {
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+// /HIGH PRESET
+
+// PROCESSOR INTEL
+.processor_intel {
+    padding: 41px 60px 53px;
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+    margin-bottom: 25px;
+    @media #{$tablet_device} {
+        padding: 35px 40px 45px;
+    }
+    
+    @media #{$tab_device} {
+        padding: 20px 15px 25px;
+    }
+
+    .processor_intel_title{
+        margin-bottom: 21px;   
+    }
+
+    .processor_intel_flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .progress_wrapper {
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 22px;
+        box-sizing: border-box;
+        margin-bottom: 13px;
+        .progress_bar {
+            background: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            border-radius: 7px;
+            .vd {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #ffffff;
+            }
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: 10px;
+        }
+
+        .speed {
+            align-self: center;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &.first {
+            .progress_bar {
+                background-color: #875be4;
+            }
+
+            .speed {
+                color: #875be4;
+                span {
+                    color: #777;
+                    font-size: 13px;
+                }
+            }
+        }
+        &.second {
+            margin-bottom: 32px;
+            .progress_bar {
+                background-color: #41a2e2;
+            }
+            .speed {
+                color: #41a2e2;
+            }
+        }
+    }
+    .porgresses {
+        flex: 0 0 100%;
+        .parts {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 2;
+            width: 60%;
+            height: 100%;
+            left: 10%;
+            span {
+                width: 1px;
+                height: 100%;
+                background-color: #dfdfdf;
+            }
+        }
+    }
+    .fps {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 13px;
+        justify-content: space-between;
+        .fps_item {
+            margin-right: 0;
+
+            @media #{$tab_device}{
+                text-align: center;
+                flex: 0 0 50%;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+            &.fps_item_blue{
+                .fps_resolution{
+                    color: #41a2e2;
+                }
+            }
+            .fps_data {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 21px;
+                /* identical to box height, or 175% */
+
+                color: #777777;
+            }
+
+            .fps_resolution {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 21px;
+                /* identical to box height, or 140% */
+
+                color: #875be4;
+            }
+        }
+        &.text_end{
+           display: flex;
+           justify-content: end;
+
+           .fps_item{
+            margin-right: 80px;
+           }
+        }
+    }
+}
+// PROCESSOR INTEL

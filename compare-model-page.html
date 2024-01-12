@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Шрифты -->
+  <link rel="stylesheet" href="fonts/American/stylesheet.css" />
+  <link rel="stylesheet" href="fonts/PT ui/stylesheet.css" />
+
+  <!-- range slider -->
+
+  <link rel="stylesheet" type="text/css" href="libs/rangeslider.js-2.3.0/rangeslider.css" />
+
+  <!-- Мой css -->
+
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper comparison_page_main">
+    <!-- header -->
+    <header>
+      <!-- menu -->
+    <section class="header_menu">
+          <div class="container">
+            <div class="header_menu_inner">
+              <div class="header_logo">
+                <a href="index.html"
+                  ><img src="images/header/logo.svg" alt=""
+                /></a>
+              </div>
+             <ul class="header_list">
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link link">Видеокарты</a>
+                  </li>
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link">Процессоры</a>
+                  </li>
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link">Игры</a>
+                  </li>
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link">Статистика</a>
+                  </li>
+
+                  <a href="#" class="close_mobile_toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" version="1.1" viewBox="0 0 752 752">
+                      <path d="m540.34 211.67c-8.5234-8.5234-21.785-8.5234-30.309 0l-134.03 134.02-134.02-134.02c-8.5234-8.5234-21.785-8.5234-30.309 0-8.5234 8.5234-8.5234 21.785 0 30.309l134.02 134.02-134.02 134.02c-8.5234 8.5234-8.5234 21.785 0 30.309 4.2617 4.2617 9.4727 6.1562 15.156 6.1562 5.6836 0 10.891-1.8945 15.156-6.1562l134.02-134.02 134.02 134.02c4.2617 4.2617 9.4727 6.1562 15.156 6.1562 5.6836 0 10.891-1.8945 15.156-6.1562 8.5234-8.5234 8.5234-21.785 0-30.309l-134.02-134.03 134.02-134.02c8.0508-8.5234 8.0508-21.785 0-30.309z" fill="#d2d2d2"/>
+                     </svg>
+                  </a>
+              </ul>
+              <div class="header_search">
+                <form action="">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="input_search"
+                      placeholder="Поиск"
+                    />
+                    <img
+                      src="images/content/search-icon.svg"
+                      alt=""
+                      class="search_icon"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <a href="#" class="mobile_open_toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" version="1.1" viewBox="0 0 752 752">
+                  <g fill="#d2d2d2">
+                   <path d="m213.21 287.2h325.59c15.863 0 30.52-8.4609 38.453-22.195 7.9297-13.738 7.9297-30.664 0-44.398-7.9336-13.738-22.59-22.199-38.453-22.199h-325.59c-15.859 0-30.52 8.4609-38.449 22.199-7.9297 13.734-7.9297 30.66 0 44.398 7.9297 13.734 22.59 22.195 38.449 22.195z"/>
+                   <path d="m538.79 331.6h-325.59c-15.859 0-30.52 8.4648-38.449 22.199-7.9297 13.738-7.9297 30.664 0 44.398 7.9297 13.738 22.59 22.199 38.449 22.199h325.59c15.863 0 30.52-8.4609 38.453-22.199 7.9297-13.734 7.9297-30.66 0-44.398-7.9336-13.734-22.59-22.199-38.453-22.199z"/>
+                   <path d="m538.79 464.8h-325.59c-15.859 0-30.52 8.4648-38.449 22.199-7.9297 13.738-7.9297 30.664 0 44.398 7.9297 13.738 22.59 22.199 38.449 22.199h325.59c15.863 0 30.52-8.4609 38.453-22.199 7.9297-13.734 7.9297-30.66 0-44.398-7.9336-13.734-22.59-22.199-38.453-22.199z"/>
+                  </g>
+                 </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+      <!-- breadcrumbs -->
+      <section class="breadcrumbss">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная ></a></li>
+            <li class="breadcrumb-item active">Видеокарты</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- main_filter -->
+      <section class="repeating_filter">
+        <div class="container">
+          <div class="title">Сравнение видеокарт</div>
+          <form action="">
+            <div class="tab_content">
+              <div id="video-card" class="tab_content_item active">
+                <div class="tab_item_selects">
+                  <div class="select_item">
+                    <div class="select_name">
+                      <img src="images/content/vd-icon.svg" alt="" />
+                      Выберите GPU..
+                    </div>
+                    <a href="#">
+                      Посмотреть
+                      <img src="images/content/dropdown-icon.svg" alt="" />
+                    </a>
+                    <ul class="select_list">
+                      <li value=""><a href="#">Intel Core i5-4670K</a></li>
+                      <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                      <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                      <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                    </ul>
+                  </div>
+                  <div class="vs">vs</div>
+                  <div class="select_item">
+                    <div class="select_name">
+                      <img src="images/content/vd-icon.svg" alt="" />
+                      Выберите GPU..
+                    </div>
+                    <a href="#">
+                      Посмотреть
+                      <img src="images/content/dropdown-icon.svg" alt="" />
+                    </a>
+                    <ul class="select_list">
+                      <li value=""><a href="#">Intel Core i5-4670K</a></li>
+                      <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                      <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                      <li value="1"><a href="#">Intel Core i5-4670K</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+              <div id="processors" class="tab_content_item">Процессоры</div>
+              <div id="game" class="tab_content_item">Пойдет ли игра</div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="compare_models">
+        <div class="container">
+          <div class="compare_models_inner">
+            <div class="compare_model_item first">
+              <div class="item_name">GeForce GTX 1060 6 GB</div>
+              <div class="item_info price">
+                <div class="item_info_text">Цена сейчас:</div>
+                <div class="item_current_data">480$</div>
+
+              </div>
+
+              <div class="item_info support">
+                <div class="item_info_text">Поддержка игр</div>
+                <div class="item_current_data">96%</div>
+
+              </div>
+            </div>
+            <div class="compare_model_item infografika">
+              <img src="images/content/infografika.svg" alt="">
+            </div>
+            <div class="compare_model_item second">
+              <div class="item_name">GeForce GTX 1650</div>
+              <div class="item_info price">
+                <div class="item_info_text">Цена сейчас:</div>
+                <div class="item_current_data">214$</div>
+
+              </div>
+
+              <div class="item_info support">
+                <div class="item_info_text">Поддержка игр</div>
+                <div class="item_current_data">85%</div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </header>
+    <!-- main -->
+    <main class="">
+      <section class="comapre_model_block">
+        <div class="container">
+          <div class="comapre_model_block_inner">
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Общая информация</div>
+                <div class="model_name">
+                  <span class="model_brand">NVIDIA</span>
+                  GeForce GTX 1060 6 GB
+                </div>
+                <div class="model_name">
+                  <span class="model_brand">NVIDIA</span>
+                  GeForce GTX 1650
+                </div>
+
+
+              </div>
+
+
+              <div class="compare_info_subtitles">
+
+                Сведения о типе (для десктопов или ноутбуков) и архитектуре GeForce GTX 1060 6 GB и GeForce GTX 1650, а
+                также о времени начала продаж
+                и стоимости на тот момент.
+
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Место в рейтинге производительности</li>
+                  <li class="list_item">Соотношение цена-качество</li>
+                  <li class="list_item">Архитектура</li>
+                  <li class="list_item">Графический процессор</li>
+                  <li class="list_item">Тип</li>
+                  <li class="list_item">Дата выхода</li>
+                  <li class="list_item">Цена на момент выхода</li>
+                  <li class="list_item">Цена сейчас</li>
+                </ul>
+
+                <ul class="model_data_list first">
+                  <li class="list_item">131</li>
+                  <li class="list_item">23.34</li>
+                  <li class="list_item">Pascal (2016-2021)</li>
+                  <li class="list_item">GP106</li>
+                  <li class="list_item">Десктопная</li>
+                  <li class="list_item">19 июля 2016 (6 лет назад)</li>
+                  <li class="list_item">299$</li>
+                  <li class="list_item">480$ (1.6x)</li>
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item">189</li>
+                  <li class="list_item">50.84</li>
+                  <li class="list_item">Turing (2018-2021) </li>
+                  <li class="list_item">TU117</li>
+                  <li class="list_item">Десктопная</li>
+                  <li class="list_item">23 апреля 2019 (3 года назад)</li>
+                  <li class="list_item">149$</li>
+                  <li class="list_item">214$ (1.4x)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Соотношение цена-качество</div>
+
+              </div>
+
+
+
+              <div class="compare_info_content circle_bar_content">
+
+                <div class="compare_info_subtitles">
+
+                  Для получения индекса мы сравниваем характеристики
+                  видеокарт и их стоимость, учитывая стоимость других карт.
+
+                </div>
+                <div class="circle first">
+                  <img src="images/content/1 (2).svg" alt="">
+                </div>
+                <div class="circle second">
+                  <img src="images/content/2.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Характеристики</div>
+
+
+
+              </div>
+
+
+              <div class="compare_info_subtitles">
+                Общие параметры GeForce GTX 1060 6 GB и GeForce GTX 1650: количество шейдеров, частота видеоядра,
+                техпроцесс, скорость текстурирования
+                и вычислений. Они косвенным образом говорят о производительности GeForce GTX 1060 6 GB и GeForce GTX
+                1650, но для точной оценки необходимо
+                рассматривать результаты бенчмарков и игровых тестов.
+
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Количество потоковых процессоров</li>
+                  <li class="list_item">Частота ядра</li>
+                  <li class="list_item">Частота в режиме Boost</li>
+                  <li class="list_item">Количество транзисторов</li>
+                  <li class="list_item">Технологический процесс</li>
+                  <li class="list_item">Энергопотребление (TDP)</li>
+                  <li class="list_item">Скорость текстурирования</li>
+                  <li class="list_item">Производительность с плавающей точкой</li>
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item">1280</li>
+                  <li class="list_item">1506 МГц</li>
+                  <li class="list_item">1708 МГц</li>
+                  <li class="list_item">4,400 млн</li>
+                  <li class="list_item">16 нм</li>
+                  <li class="list_item">120 Вт</li>
+                  <li class="list_item">136.7</li>
+                  <li class="list_item">4,375 gflops</li>
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item">896</li>
+                  <li class="list_item">1485 МГц</li>
+                  <li class="list_item">1665 МГц </li>
+                  <li class="list_item">4,700 млн</li>
+                  <li class="list_item">12 нм</li>
+                  <li class="list_item">75 Вт</li>
+                  <li class="list_item">93.24</li>
+                  <li class="list_item list_item_nodata">Нет данных</li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Совместимость и размеры</div>
+
+
+
+              </div>
+
+
+              <div class="compare_info_subtitles">
+                Параметры, отвечающие за совместимость GeForce GTX 1060 6 GB и GeForce GTX 1650 с остальными
+                компонентами компьютера.
+                Пригодятся например при выборе конфигурации будущего компьютера или для апгрейда существующего. Для
+                десктопных видеокарт это интерфейс
+                и шина подключения (совместимость с материнской платой), физические размеры видеокарты (совместимость с
+                материнской платой и корпусом),
+                дополнительные разъемы питания (совместимость с блоком питания).
+
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Интерфейс</li>
+                  <li class="list_item">Длина</li>
+                  <li class="list_item">Толщина </li>
+                  <li class="list_item">Дополнительные разъемы питания</li>
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item">PCIe 3.0 x16</li>
+                  <li class="list_item">250 мм</li>
+                  <li class="list_item">2 слота</li>
+                  <li class="list_item">4,400 млн</li>
+                  <li class="list_item">1x 6-pin</li>
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item">PCIe 3.0 x16</li>
+                  <li class="list_item">229 мм</li>
+                  <li class="list_item">2 слота </li>
+                  <li class="list_item">нет</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Оперативная память</div>
+              </div>
+
+
+              <div class="compare_info_subtitles">
+                Параметры установленной на GeForce GTX 1060 6 GB и GeForce GTX 1650 памяти - тип, объем, шина, частота и
+                пропускная способность.
+                Для встроенных в процессор видеокарт, не имеющих собственной памяти, используется разделяемая - часть
+                оперативной памяти.
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Тип памяти</li>
+                  <li class="list_item">Максимальный объём памяти</li>
+                  <li class="list_item">Ширина шины памяти </li>
+                  <li class="list_item">Частота памяти</li>
+                  <li class="list_item">Пропускная способность памяти</li>
+                  <li class="list_item">Разделяемая память</li>
+
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item">GDDR5</li>
+                  <li class="list_item">6 Гб </li>
+                  <li class="list_item">192 бит</li>
+                  <li class="list_item">8000 МГц</li>
+                  <li class="list_item">192.2 Гб/с</li>
+                  <li class="list_item">-</li>
+
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item">GDDR5</li>
+                  <li class="list_item">4 Гб </li>
+                  <li class="list_item">128 бит</li>
+                  <li class="list_item">8000 МГц</li>
+                  <li class="list_item">128.0 Гб/с</li>
+                  <li class="list_item">-</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Технологии </div>
+              </div>
+
+
+              <div class="compare_info_subtitles">
+                Здесь перечислены поддерживаемые GeForce GTX 1060 6 GB и GeForce GTX 1650 технологические решения и API.
+                Такая информация понадобится,
+                если от видеокарты требуется поддержка конкретных технологий.
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">VR Ready</li>
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item">+</li>
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item list_item_nodata">Нет данных</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Поддержка API </div>
+              </div>
+
+
+              <div class="compare_info_subtitles">
+                Перечислены поддерживаемые GeForce GTX 1060 6 GB и GeForce GTX 1650 API, включая их версии.
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">DirectX</li>
+                  <li class="list_item">Шейдерная модель</li>
+                  <li class="list_item">OpenGL</li>
+                  <li class="list_item">OpenCL</li>
+                  <li class="list_item">Vulkan</li>
+                  <li class="list_item">CUDA</li>
+
+
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item">12 (12_1)</li>
+                  <li class="list_item">6.4</li>
+                  <li class="list_item">4.6</li>
+                  <li class="list_item">1.2</li>
+                  <li class="list_item">1.2.131</li>
+                  <li class="list_item">6.1</li>
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item">12 (12_1)</li>
+                  <li class="list_item">6.5</li>
+                  <li class="list_item">4.6</li>
+                  <li class="list_item">1.2</li>
+                  <li class="list_item">1.2.131</li>
+                  <li class="list_item">7.5</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- second -->
+
+      <section class="comapre_model_block">
+        <div class="container">
+          <div class="comapre_model_block_inner">
+
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Тесты в бенчмарках</div>
+
+
+
+              </div>
+
+
+              <div class="compare_info_subtitles subtitles_border_bottom">
+                Это результаты тестов GeForce GTX 1060 6 GB и GeForce GTX 1650 на производительность рендеринга в
+                неигровых бенчмарках.
+                Общий балл выставляется от 0 до 100, где 100 соответствует самой быстрой на данный момент видеокарте.
+              </div>
+
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Общая производительность в тестах </div>
+
+
+
+              </div>
+
+
+              <div class="compare_info_subtitles">
+                Это наш суммарный рейтинг производительности. Мы регулярно улучшаем наши алгоритмы, но если вы
+                обнаружите какие-то несоответствия,
+                не стесняйтесь высказываться в разделе комментариев, мы обычно быстро устраняем проблемы.
+              </div>
+              <div class="compare_info_content ">
+                <div class="progress_wrapper first">
+                  <div class="progress_bar">
+                    <div class="vd">GeForce GTX 1060 6 GB</div>
+
+                  </div>
+                  <div class="speed">34.42
+                    <span>+31.2%</span>
+                  </div>
+                  <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">34</div>
+                </div>
+                <div class="progress_wrapper second">
+                  <div class="progress_bar">
+                    <div class="vd">GeForce GTX 1650</div>
+
+                  </div>
+                  <div class="speed">26.23 </div>
+                  <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">26.23</div>
+                </div>
+                <div class="block_links">
+                  <button class="link active" data-tab-target="#passmark">Passmark</button>
+                  <button class="link"  data-tab-target="#vantage">3DMark Vantage Performance</button>
+                  <button class="link"  data-tab-target="#performance">3DMark 11 Performance GPU</button>
+                  <button class="link"  data-tab-target="#cloud">3DMark Cloud Gate GPU</button>
+                  <button class="link link_other">Другие тесты <img src="images/content/dropdown-icon.svg"
+                      alt=""></button>
+
+                </div>
+                <div class="subtitle">
+                  Это очень распространенный бенчмарк, входящий в состав пакета Passmark PerformanceTest. Он дает
+                  видеокарте тщательную оценку, производя
+                  четыре отдельных теста для Direct3D версий 9, 10, 11 и 12 (последний по возможности делается в
+                  разрешении 4K), и еще несколько тестов,
+                  использующих DirectCompute.
+                </div>
+
+                <div class="oxvat">Охват бенчмарка: 25%</div>
+
+                
+                <div class="tab_compare_content">
+                  <div class="tab_content_item active" id="passmark">
+                    <div>для пример 1</div>
+                    <div class="progress_wrapper first">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1060 6 GB</div>
+    
+                      </div>
+                      <div class="speed">10252
+                        <span>+31.2%</span>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">34</div>
+                    </div>
+                    <div class="progress_wrapper second">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1650</div>
+    
+                      </div>
+                      <div class="speed">7812 </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">26.23</div>
+                    </div>
+                  </div>
+  
+                  <div class="tab_content_item" id="vantage">
+                    <div>для пример 2</div>
+
+                    <div class="progress_wrapper first">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1060 6 GB</div>
+    
+                      </div>
+                      <div class="speed">10252
+                        <span>+31.2%</span>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">34</div>
+                    </div>
+                    <div class="progress_wrapper second">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1650</div>
+    
+                      </div>
+                      <div class="speed">7812 </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">26.23</div>
+                    </div>
+                  </div>
+  
+                  <div class="tab_content_item" id="performance">
+                    <div>для пример 3</div>
+
+                    <div class="progress_wrapper first">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1060 6 GB</div>
+    
+                      </div>
+                      <div class="speed">10252
+                        <span>+31.2%</span>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">34</div>
+                    </div>
+                    <div class="progress_wrapper second">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1650</div>
+    
+                      </div>
+                      <div class="speed">7812 </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">26.23</div>
+                    </div>
+                  </div>
+  
+                  
+                  <div class="tab_content_item" id="cloud">
+                    <div>для пример 4</div>
+
+                    <div class="progress_wrapper first">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1060 6 GB</div>
+    
+                      </div>
+                      <div class="speed">10252
+                        <span>+31.2%</span>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">34</div>
+                    </div>
+                    <div class="progress_wrapper second">
+                      <div class="progress_bar">
+                        <div class="vd">GeForce GTX 1650</div>
+    
+                      </div>
+                      <div class="speed">7812 </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">26.23</div>
+                    </div>
+                  </div>
+  
+                </div>
+                
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <section class="comapre_model_block">
+        <div class="container">
+          <div class="comapre_model_block_inner">
+
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Тесты в играх </div>
+
+
+
+              </div>
+
+
+              <div class="compare_info_subtitles">
+                Результаты GeForce GTX 1060 6 GB и GeForce GTX 1650 в играх, значения измеряются в FPS.
+              </div>
+
+            </div>
+            <div class="comapre_info_item">
+
+              <div class="compare_info_content circle_bar_content content_border_bottom">
+
+                <div class="compare_info_subtitles">
+
+                  NVIDIA GeForce GTX 1060 6 GB удовлетворяет 100%
+                  минимальных и 96% рекомендованных требований
+                  всех известных нам игр.
+                </div>
+                <div class="circle first">
+                  <img src="images/content/3.svg" alt="">
+                </div>
+                <div class="circle second">
+                  <img src="images/content/4.svg" alt="">
+                </div>
+              </div>
+
+              <!-- has_border_bottom значит -->
+
+              <div class="compare_info_content circle_bar_content content_border_bottom">
+
+                <div class="compare_info_subtitles">
+
+                  NVIDIA GeForce GTX 1060 6 GB удовлетворяет 100%
+                  минимальных и 96% рекомендованных требований
+                  всех известных нам игр.
+                </div>
+                <div class="circle first">
+                  <img src="images/content/5.svg" alt="">
+                </div>
+                <div class="circle second">
+                  <img src="images/content/6.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="comapre_info_item">
+
+
+
+
+              <div class="compare_info_subtitles">
+                Здесь приведены средние значения частоты кадров в секунду в большом наборе популярных игр в различных
+                разрешениях:
+
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Full HD</li>
+                  <li class="list_item">1440</li>
+                  <li class="list_item">4K</li>
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">93 <span class="item_percent"> + 32.9%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">93 <span class="item_percent"> + 32.9%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">93 <span class="item_percent"> + 32.9%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;">
+
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">70 <span class="item_percent">-32.9%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">39 <span class="item_percent">-25.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">23 <span class="item_percent"> -39.1%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Full HD Low Preset</div>
+
+
+
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Cyberpunk 2077</li>
+
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent"> + 30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">24−27 <span class="item_percent">−30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="comapre_info_item">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Full HD Medium Preset</div>
+
+
+
+              </div>
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Assassin's Creed Odyssey </li>
+                  <li class="list_item">Assassin's Creed Valhalla </li>
+                  <li class="list_item">Battlefield 5</li>
+                  <li class="list_item">Call of Duty: Modern Warfare</li>
+                  <li class="list_item">Cyberpunk 2077</li>
+                  <li class="list_item">Far Cry 5</li>
+                  <li class="list_item">Far Cry New Dawn</li>
+                  <li class="list_item">Forza Horizon 4</li>
+                  <li class="list_item">Hitman 3</li>
+                  <li class="list_item">Horizon Zero Dawn</li>
+                  <li class="list_item">Red Dead Redemption 2</li>
+                  <li class="list_item">Shadow of the Tomb Raider</li>
+                  <li class="list_item">Watch Dogs: Legion</li>
+
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">72 <span class="item_percent">+35.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent">-38.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">106 <span class="item_percent">+73.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">78 <span class="item_percent"> +2.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 25%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent"> + 30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">82 <span class="item_percent">+20.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">81 <span class="item_percent">+22.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">100 <span class="item_percent">+11.1%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35<span class="item_percent"> + 30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 48%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35<span class="item_percent"> −61.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">56 <span class="item_percent">+7.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">68 <span class="item_percent">+17.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 14%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent"> −64.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 18%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent"> + 30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+
+
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">53<span class="item_percent">-35.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">47<span class="item_percent"> +38.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 16%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">61 -73.8%<span class="item_percent">−30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 19%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">76 <span class="item_percent"> −2.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">24−27 <span class="item_percent">−30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">60 <span class="item_percent">−20.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">66 <span class="item_percent">−22.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 8%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">90 <span class="item_percent"> -11.1%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 48%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">24−27 <span class="item_percent">−30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">55 <span class="item_percent"> +61.8% </span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 18%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">52 <span class="item_percent"> −7.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">58 <span class="item_percent"> −17.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">56 <span class="item_percent"> +64.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="comapre_info_item ">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Full HD High Preset</div>
+
+
+
+              </div>
+              <div class="compare_info_content content_border_bottom">
+                <ul class="general_list">
+                  <li class="list_item">Assassin's Creed Odyssey </li>
+                  <li class="list_item">Assassin's Creed Valhalla </li>
+                  <li class="list_item">Battlefield 5</li>
+                  <li class="list_item">Call of Duty: Modern Warfare</li>
+                  <li class="list_item">Cyberpunk 2077</li>
+                  <li class="list_item">Far Cry 5</li>
+                  <li class="list_item">Far Cry New Dawn</li>
+                  <li class="list_item">Forza Horizon 4</li>
+                  <li class="list_item">Hitman 3</li>
+                  <li class="list_item">Horizon Zero Dawn</li>
+                  <li class="list_item">Red Dead Redemption 2</li>
+                  <li class="list_item">Shadow of the Tomb Raider</li>
+                  <li class="list_item">Watch Dogs: Legion</li>
+
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">72 <span class="item_percent">+35.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent">-38.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">106 <span class="item_percent">+73.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">78 <span class="item_percent"> +2.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 25%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent"> + 30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">82 <span class="item_percent">+20.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">81 <span class="item_percent">+22.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">100 <span class="item_percent">+11.1%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35<span class="item_percent"> + 30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 48%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35<span class="item_percent"> −61.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">56 <span class="item_percent">+7.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">68 <span class="item_percent">+17.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 14%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent"> −64.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 18%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">30−35 <span class="item_percent"> + 30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+
+
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">53<span class="item_percent">-35.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">47<span class="item_percent"> +38.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 16%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">61 -73.8%<span class="item_percent">−30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 19%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">76 <span class="item_percent"> −2.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">24−27 <span class="item_percent">−30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">60 <span class="item_percent">−20.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">66 <span class="item_percent">−22.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 8%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">90 <span class="item_percent"> -11.1%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 48%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">24−27 <span class="item_percent">−30.8%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">55 <span class="item_percent"> +61.8% </span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 18%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">52 <span class="item_percent"> −7.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">58 <span class="item_percent"> −17.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_green">56 <span class="item_percent"> +64.7%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="comapre_info_item ">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Выбрать свою игру</div>
+              </div>
+              <div class="compare_info_content content_border_bottom">
+
+                <form action="">
+
+                  <div class="filter_item">
+                    <div class="filter_item_name">Процессор::</div>
+                    <a href="" class="select_btn">
+                      <img src="images/content/cpu-icon.svg" alt=""> Intel Core
+                      i5-4670K</a>
+                    <ul name="cpu" id="" class="select_list cpu_ul">
+                      <li value="">Intel Core i5-4670K</li>
+                      <li value="1">1</li>
+                      <li value="1">1</li>
+                      <li value="1">1</li>
+                    </ul>
+                  </div>
+
+
+
+                </form>
+
+                <ul class="general_list">
+                  <li class="list_item">Разработчик:</li>
+                  <li class="list_item">Издатель:</li>
+                  <li class="list_item">Дата выхода:</li>
+                  <li class="list_item">Рейтинг Metacritic:</li>
+                  <li class="list_item">Наш пользовательский рейтинг:</li>
+
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item list_item_blue">
+                    Epic Games, People Can Fly
+                  </li>
+                  <li class="list_item list_item_blue">
+                    Epic Games
+                  </li>
+                  <li class="list_item list_item_blue ">
+                    25 июля 2017 <span>(5 лет назад)</span>
+                  </li>
+                  <li class="list_item  list_item_blue">
+                    81 / 100
+                  </li>
+                  <li class="list_item list_item_blue ">
+                    3.4 / 5
+                  </li>
+
+                </ul>
+
+                <div class="compare_info_subtitles">
+
+                  Сравнение производительности GeForce GTX 1060 6 GB и GeForce GTX 1650 с официальными системными
+                  требованиями Fortnite.
+                </div>
+
+                <div class="porgresses">
+                  <div class="progress_wrapper first">
+                    <div class="progress_bar" style="width: 34%;">
+
+
+                    </div>
+                    <div class="speed">GeForce GTX 1060 6 GB
+                      <span>+31.2%</span>
+                    </div>
+                    <div class="progress_bar_indicator hidden" style="left: calc(34% - 16px);">54</div>
+
+                    <div class="parts" style="left: 18%;">
+                      <span style=" background-color:  #9363F8;"></span>
+
+                    </div>
+                  </div>
+                  <div class="progress_wrapper second">
+                    <div class="progress_bar" style="width: 34%;">
+
+                    </div>
+                    <div class="speed">GeForce GTX 1060 6 GB
+
+                    </div>
+                    <div class="progress_bar_indicator hidden" style="left: calc(34% - 16px);">34</div>
+
+                    <div class="parts">
+                      <span style=" background-color:  #50B6FA;"></span>
+                      <span style=" background-color:  #50B6FA;"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="fps">
+                  <div class="fps_item">
+                    <div class="fps_data">30 fps @ low</div>
+                    <div class="fps_resolution ">1280×720</div>
+                  </div>
+                  <div class="fps_item">
+                    <div class="fps_data">60 fps @ medium</div>
+                    <div class="fps_resolution ">1920×1080</div>
+                  </div>
+                  <div class="fps_item">
+                    <div class="fps_data">60 fps @ high</div>
+                    <div class="fps_resolution ">1920×1080</div>
+                  </div>
+                  <div class="fps_item">
+                    <div class="fps_data">60 fps @ ultra</div>
+                    <div class="fps_resolution ">1920×1080</div>
+                  </div>
+                  <div class="fps_item">
+                    <div class="fps_data">60 fps @ QHD</div>
+                    <div class="fps_resolution ">2560×1440</div>
+                  </div>
+                  <div class="fps_item">
+                    <div class="fps_data">60 fps @ epic</div>
+                    <div class="fps_resolution ">3840×2160</div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <div class="comapre_info_item ">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Тесты FPS</div>
+              </div>
+              <div class="compare_info_subtitles">
+                Средние FPS в Fortnite на GeForce GTX 1060 6 GB и GeForce GTX 1650 (в реальных тестах). FPS могут
+                варьироваться в зависимости от операционной
+                системы и других факторов.
+
+              </div>
+
+
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Низкие / 720p</li>
+                  <li class="list_item">Средние / 1080p</li>
+                  <li class="list_item">Высокие / 1080p</li>
+                  <li class="list_item">Ультра / 1080p</li>
+                  <li class="list_item">QHD / 1440p</li>
+                  <li class="list_item">4K / 2160p</li>
+
+
+                </ul>
+
+
+                <ul class="model_data_list first">
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">345 fps <span class="item_percent">+38% </span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">246 fps <span class="item_percent"> +16.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">117 fps <span class="item_percent">+37.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">91 fps <span class="item_percent">+49.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 25%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">54 fps <span class="item_percent"> +28.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 1%;"></div>
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex ">
+                    <div class="item_number item_number_green ">26 fps <span class="item_percent">+136%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_green" style="width: 8%;"></div>
+                    </div>
+                  </li>
+
+
+                </ul>
+                <ul class="model_data_list second">
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">250 fps <span class="item_percent">−38%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">211 <span class="item_percent">+-16.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 16%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">85<span class="item_percent"> −37.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 19%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">61 <span class="item_percent"> −49.2%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 1%;"></div>
+
+                    </div>
+                  </li>
+                  <li class="list_item list_item_flex">
+                    <div class="item_number item_number_red">42 <span class="item_percent">−28.6%</span></div>
+                    <div class="item_box">
+                      <div class="item_box_fill item_box_red" style="width: 12%;"></div>
+
+                    </div>
+                  </li>
+
+
+                </ul>
+
+                <a class="button button_gradient"> <img src="images/content/go-icon.svg" alt=""> Отправить свои
+                  значения FPS</a>
+              </div>
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="comapre_model_block">
+        <div class="container">
+          <div class="comapre_model_block_inner">
+
+
+
+
+            <div class="comapre_info_item ">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Преимущества и минусы </div>
+              </div>
+              <div class="compare_info_subtitles">
+                Средние FPS в Fortnite на GeForce GTX 1060 6 GB и GeForce GTX 1650 (в реальных тестах). FPS могут
+                варьироваться в зависимости от операционной
+                системы и других факторов.
+
+              </div>
+
+
+              <div class="compare_info_content">
+                <ul class="general_list">
+                  <li class="list_item">Рейтинг производительности </li>
+                  <li class="list_item">Новизна </li>
+                  <li class="list_item">Стоимость </li>
+                  <li class="list_item">Ширина шины памяти </li>
+                  <li class="list_item">Количество потоковых процессоров</li>
+                  <li class="list_item">Пропускная способность памяти</li>
+                  <li class="list_item">Технологический процесс</li>
+                  <li class="list_item">Энергопотребление (TDP)</li>
+                </ul>
+
+
+                <ul class="model_data_list first">
+
+                  <li class="list_item">34.53</li>
+                  <li class="list_item list_item_grey">19 июля 2016</li>
+                  <li class="list_item list_item_grey">$299</li>
+                  <li class="list_item ">192</li>
+                  <li class="list_item ">1280</li>
+                  <li class="list_item ">192.2</li>
+                  <li class="list_item list_item_grey">16 нм</li>
+                  <li class="list_item list_item_grey">120 Ватт</li>
+
+
+
+                </ul>
+                <ul class="model_data_list second">
+
+                  <li class="list_item list_item_grey">26.31</li>
+                  <li class="list_item ">23 апреля 2019 </li>
+                  <li class="list_item ">$149</li>
+                  <li class="list_item list_item_grey">128</li>
+                  <li class="list_item list_item_grey">896</li>
+                  <li class="list_item list_item_grey">128</li>
+                  <li class="list_item ">12 нм</li>
+                  <li class="list_item ">75 Ватт</li>
+
+                </ul>
+
+                <div class="compare_banner">
+                  <div class="compare_text">Исходя из результатов тестов,<span> Technical City</span> рекомендует
+                    видеокарту</div>
+                  <div class="compare_reccom">
+                    <img src="images/content/nv.svg" alt="">NVIDIA GeForce GTX 1060 6 GB
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="comapre_model_block">
+        <div class="container">
+          <div class="comapre_model_block_inner">
+
+
+
+
+            <div class="comapre_info_item ">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Проголосуйте </div>
+              </div>
+              <div class="compare_info_subtitles">
+                Вы согласны с нашим мнением или думаете иначе? Проголосуйте за любимую видеокарту, нажав кнопку
+                "Нравится".
+
+              </div>
+
+
+             <form action="">
+              <div class="compare_info_content compare_info_content_space_between">
+
+                <div class="vd_item first">
+
+            
+
+                      
+
+                    <div class="star-rating">
+                      <input type="checkbox" id="vd_star1" name="rating_vd" value="1" />
+                      <label for="vd_star1" class="star">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                          <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                        </svg>
+                      </label>
+      
+                    </div>
+         
+
+                  <div class="vd_text">
+                    <div class="vd_brand">NVIDIA</div>
+                    <div class="vd_model">GeForce GTX 1060 6 GB</div>
+                  </div>
+                </div>
+                <div class="vd_item second">
+                 
+                  <div class="star-rating">
+                    <input type="checkbox" id="vd_star2" name="rating_vd" value="1" />
+                    <label for="vd_star2" class="star">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                        <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                      </svg>
+                    </label>
+    
+                  </div>
+
+                  <div class="vd_text">
+                    <div class="vd_brand">NVIDIA</div>
+                    <div class="vd_model">GeForce GTX 1650</div>
+                  </div>
+                </div>
+
+              </div>
+             </form>
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="comapre_model_block competitors">
+        <div class="container">
+          <div class="comapre_model_block_inner competitors_inner">
+
+
+
+
+            <div class="comapre_info_item ">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Конкуренты GeForce GTX 1650 от AMD </div>
+              </div>
+              <div class="compare_info_subtitles">
+                Мы полагаем, что ближайшим конкурентом GeForce GTX 1650 от компании AMD является Radeon RX 580X, которая
+                примерно равна по скорости
+                и на 1 позицию ниже в нашем рейтинге.
+
+              </div>
+
+
+              <div class="compare_info_content ">
+
+                <div class="vd_item ">
+
+                  <div class="vd_content">
+                    <img src="images/content/amd.svg" alt="" class="vd_img">
+
+                    <div class="vd_text">
+                      <div class="vd_brand">Radeon RX</div>
+                      <div class="vd_model">580X</div>
+                    </div>
+                  </div>
+
+                  <div class="vd_action">
+                    <a href="" class="button button_gradient">Сравнить</a>
+                  </div>
+                </div>
+
+
+                <div class="videocard_progress">
+
+                  <div class="videocard_text">Вот несколько ближайших конкурентов GeForce GTX 1650 от AMD: </div>
+                  <div class="videocard_item">
+                    <div class="progress_wrapper">
+                      <div class="progress_bar" style="width: 100%;">
+                        <div class="vd">AMD Radeon R9 290</div>
+                        <div class="speed">103.61</div>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(100% - 24px);">103</div>
+                    </div>
+                  </div>
+                  <div class="videocard_item">
+                    <div class="progress_wrapper">
+                      <div class="progress_bar" style="width: 78.08%;">
+                        <div class="vd">AMD Radeon RX 470</div>
+                        <div class="speed">102.47</div>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(78.08% - 36px);">98.08</div>
+                    </div>
+                  </div>
+
+                  <div class="videocard_item">
+                    <div class="progress_wrapper">
+                      <div class="progress_bar" style="width: 62.68%;">
+                        <div class="vd">AMD Radeon RX 580 2048SP</div>
+                        <div class="speed">100.34</div>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(62.68% - 36px);">93.68</div>
+                    </div>
+                  </div>
+
+                  <div class="videocard_item">
+                    <div class="progress_wrapper">
+                      <div class="progress_bar progress_bar_blue" style="width: 59.18%;">
+                        <div class="vd">NVIDIA GeForce GTX 1650</div>
+                        <div class="speed">100</div>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(59.18% - 36px);">93</div>
+                    </div>
+                  </div>
+                  <div class="videocard_item">
+                    <div class="progress_wrapper">
+                      <div class="progress_bar" style="width: 56.11%;">
+                        <div class="vd">AMD Radeon RX 580X</div>
+                        <div class="speed">99.85</div>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(56.11% - 35.125px);">88.11</div>
+                    </div>
+                  </div>
+                  <div class="videocard_item">
+                    <div class="progress_wrapper">
+                      <div class="progress_bar" style="width: 56.11%;">
+                        <div class="vd">AMD Radeon RX 5300</div>
+                        <div class="speed">97.42</div>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(56.11% - 35.125px);">85.11</div>
+                    </div>
+                  </div>
+                  <div class="videocard_item">
+                    <div class="progress_wrapper">
+                      <div class="progress_bar" style="width: 56.11%;">
+                        <div class="vd">AMD Radeon R9 290X</div>
+                        <div class="speed">95.06</div>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(56.11% - 35.125px);">82.11</div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="similar_comparisons">
+        <div class="container">
+          <div class="title">Похожие сравнения видеокарт</div>
+          <div class="block_subtitle">
+            Мы подобрали несколько сравнений видеокарт с более или менее
+            близкой производительностью.
+          </div>
+          <div class="similar_comparisons_inner">
+            <div class="comparison_item">
+              <div class="comparison_brand">
+                <div class="comparison_brand_img">
+                  <img src="images/content/nvidia.svg" alt="" />
+                </div>
+                <div class="comparison_brand_text">
+                  <div class="comparison_brand_name">GeForce GTX</div>
+                  <div class="comparison_brand_model">1650</div>
+                </div>
+              </div>
+              <div class="vs">vs</div>
+              <div class="comparison_brand">
+                <div class="comparison_brand_img">
+                  <img src="images/content/amd.svg" alt="" />
+                </div>
+                <div class="comparison_brand_text">
+                  <div class="comparison_brand_name">Radeon RX</div>
+                  <div class="comparison_brand_model">470</div>
+                </div>
+              </div>
+              <!-- Ссылка для этого блока  -->
+              <a href="#"></a>
+            </div>
+            <div class="comparison_item">
+              <div class="comparison_brand">
+                <div class="comparison_brand_img">
+                  <img src="images/content/nvidia.svg" alt="" />
+                </div>
+                <div class="comparison_brand_text">
+                  <div class="comparison_brand_name">GeForce GTX</div>
+                  <div class="comparison_brand_model">1060</div>
+                </div>
+              </div>
+              <div class="vs">vs</div>
+              <div class="comparison_brand">
+                <div class="comparison_brand_img">
+                  <img src="images/content/nvidia.svg" alt="" />
+                </div>
+                <div class="comparison_brand_text">
+                  <div class="comparison_brand_name">GeForce GTX</div>
+                  <div class="comparison_brand_model">970</div>
+                </div>
+              </div>
+
+              <!-- Ссылка для этого блока  -->
+              <a href="#"></a>
+            </div>
+            <div class="comparison_item">
+              <div class="comparison_brand">
+                <div class="comparison_brand_img">
+                  <img src="images/content/nvidia.svg" alt="" />
+                </div>
+                <div class="comparison_brand_text">
+                  <div class="comparison_brand_name">GeForce GTX</div>
+                  <div class="comparison_brand_model">1060</div>
+                </div>
+              </div>
+              <div class="vs">vs</div>
+              <div class="comparison_brand">
+                <div class="comparison_brand_img">
+                  <img src="images/content/nvidia.svg" alt="" />
+                </div>
+                <div class="comparison_brand_text">
+                  <div class="comparison_brand_name">GeForce GTX</div>
+                  <div class="comparison_brand_model">1650S</div>
+                </div>
+              </div>
+
+              <!-- Ссылка для этого блока  -->
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="comapre_model_block">
+        <div class="container">
+          <div class="comapre_model_block_inner">
+
+
+
+
+            <div class="comapre_info_item ">
+
+              <div class="compare_info_titles">
+                <div class="general_title">Оценка пользователями </div>
+              </div>
+              <div class="compare_info_subtitles">
+                Здесь Вы можете посмотреть оценку видеокарт пользователями, а также поставить свою оценку.
+
+              </div>
+
+
+              <div class="compare_info_content ">
+
+                <div class="rating_item">
+                  <div class="rating_img">
+                    <img src="images/content/rating-1.svg" alt="">
+                  </div>
+                  <div class="rating_content">
+                    <div class="rating_text">
+                      Оцените NVIDIA GeForce GTX 1060 6 GB по шкале от 1 до 5 баллов:
+                    </div>
+                    <div class="rating_stars">
+
+                      
+
+                      <div class="star-rating">
+                        <input type="radio" id="1-star1" name="rating1" value="1" />
+                        <label for="1-star1" class="star">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                            <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                          </svg>
+                        </label>
+                        
+                        <input type="radio" id="2-stars1" name="rating1" value="2" />
+                        <label for="2-stars1" class="star">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                            <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                          </svg>
+                        </label>
+
+                        <input type="radio" id="3-stars1" name="rating1" value="3" />
+                        <label for="3-stars1" class="star">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                            <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                          </svg>
+                        </label>
+
+                        <input type="radio" id="4-stars1" name="rating1" value="4" />
+                        <label for="4-stars1" class="star">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                            <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                          </svg>
+                        </label>
+                        
+                        <input type="radio" id="5-stars1" name="rating1" value="5" />
+                        <label for="5-stars1" class="star">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                            <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                          </svg>
+                        </label>
+                        
+                        
+                     
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating_item">
+                  <div class="rating_img">
+                    <img src="images/content/rating-2.svg" alt="">
+                  </div>
+                  <div class="rating_content">
+                    <div class="rating_text">
+                      Оцените NVIDIA GeForce GTX 1650 по шкале от 1 до 5 баллов:
+                    </div>
+                    <div class="star-rating">
+                      <input type="radio" id="1-star" name="rating" value="1" />
+                      <label for="1-star" class="star">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                          <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                        </svg>
+                      </label>
+                      
+                      <input type="radio" id="2-stars" name="rating" value="2" />
+                      <label for="2-stars" class="star">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                          <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                        </svg>
+                      </label>
+
+                      <input type="radio" id="3-stars" name="rating" value="3" />
+                      <label for="3-stars" class="star">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                          <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                        </svg>
+                      </label>
+
+                      <input type="radio" id="4-stars" name="rating" value="4" />
+                      <label for="4-stars" class="star">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                          <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                        </svg>
+                      </label>
+                      
+                      <input type="radio" id="5-stars" name="rating" value="5" />
+                      <label for="5-stars" class="star">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                          <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"/>
+                        </svg>
+                      </label>
+                      
+                      
+                   
+                     
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="comapre_model_block">
+        <div class="container">
+          <div class="comapre_model_block_inner">
+
+
+
+
+            <div class="kommets">
+              <div class="komments_box">
+                <!-- title -->
+                <h3 class="gta_title komments_title">Советы и комментарии</h3>
+                <!--  descrp  -->
+                <div class="gta_description komments_description">
+                  <p>Здесь можно задать вопрос о GeForce GTX 1060 6 GB или GeForce GTX 1650, согласиться или не согласиться с нашими оценками, или сообщить 
+                    об ошибках и неточностях на сайте.</p>
+                </div>
+
+                <!-- form -->
+                <div class="form_box">
+                  <form action="" class="komments_form">
+                    <div class="komments_form_flex">
+                      <!-- left -->
+                      <div class="komments_form_left">
+                        <div class="komments_left_user"></div>
+                      </div>
+                      <!-- right -->
+                      <div class="komments_form_right">
+                        <div class="komments_input_box"><input type="text" class="komments_input_one" placeholder="Присоедениться к обсуждению"></div>
+                        <div class="komments_input_flex">
+                          <div class="komments_input_box2"><input type="text" class="komments_input_two" placeholder="Ваше имя"></div>
+                          <div class="komments_input_box3"><input type="text" class="komments_input_three" placeholder="Ваш E-mail"></div>
+                          <div class="komments_btn_box"><button class="komments_form_btn">Отправить</button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- komments2 -->
+
+                <!-- title -->
+                <h3 class="gta_title komments_bottom_title">Комментарии пользователей</h3>
+                <!--  descrp  -->
+                <div class="gta_description komments_description">
+                </div>
+
+                <div class="form_box2">
+                  <form action="" class="komments_form">
+                    <div class="komments_form_flex">
+                      <!-- left -->
+                      <div class="komments_form_left">
+                        <div class="komments_left_user"><img src="images/shamshod/user.svg" alt="img"></div>
+                      </div>
+                      <!-- right -->
+                      <div class="komments_form_right">
+                        <div class="komments_right_top">
+                          <div class="desc1">German Irgigitov</div>
+                          <div class="desc2">2 года назад</div>
+                        </div>
+                        <div class="komments_right_bottom">
+                          <div>Купил б/у 1060 3гб за 110 долл. Доволен как слон. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="komments_form_flex">
+                      <!-- left -->
+                      <div class="komments_form_left">
+                        <div class="komments_left_user"><img src="images/shamshod/user-2.svg" alt="img"></div>
+                      </div>
+                      <!-- right -->
+                      <div class="komments_form_right">
+                        <div class="komments_right_top">
+                          <div class="desc1">DIE KRUPPS</div>
+                          <div class="desc2">2 года назад</div>
+                        </div>
+                        <div class="komments_right_bottom">
+                          <div>Купил б/у 1060 3гб за 110 долл. Доволен как слон. ))</div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer_languages">
+        <div class="container">
+          <div class="footer_languages_inner">
+            <div class="footer_languages_logo">
+              <img src="images/header/logo.svg" alt="" />
+            </div>
+            <div class="footer_languages_list">
+              <ul class="languages_list">
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Русский</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">English</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Español</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Português</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Deutsch</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Français</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Italiano</a>
+                </li>
+                <li class="languages_list_item">
+                  <a href="" class="languages_list_link">Polski</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rules">
+        <div class="container">
+          <div class="rules_inner">
+            <div class="rules_links">
+              <a href="" class="rules_link">О сайте</a>
+              <a href="" class="rules_link">Политика конфиденциальности</a>
+            </div>
+            <div class="rules_text">
+              Нашли ошибку? Выделите её и нажмите Ctrl+Enter. <br />
+              Игры протестированы
+              <a href="#" class="rules_link rules_link_small">notebookcheck.net</a>
+              <br />
+              Наши партнёры: каталог инструкций
+              <a href="#" class="rules_link rules_link_underline">emanuals.org</a>
+              , справочник организаций
+              <a href="#" class="rules_link">otzywy.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Jquery -->
+  <script src="libs/jquery-3.6.0.min.js"></script>
+
+  <!-- rangeslider -->
+
+  <script src="libs/rangeslider.js-2.3.0/rangeslider.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

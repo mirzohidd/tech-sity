@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Шрифты -->
+    <link rel="stylesheet" href="fonts/American/stylesheet.css" />
+    <link rel="stylesheet" href="fonts/PT ui/stylesheet.css" />
+    <!-- Мой css -->
+
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <!-- menu -->
+        <section class="header_menu">
+          <div class="container">
+            <div class="header_menu_inner">
+              <div class="header_logo">
+                <a href="index.html"
+                  ><img src="images/header/logo.svg" alt=""
+                /></a>
+              </div>
+             <ul class="header_list">
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link link">Видеокарты</a>
+                  </li>
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link">Процессоры</a>
+                  </li>
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link">Игры</a>
+                  </li>
+                  <li class="header_list_item">
+                    <a href="" class="header_list_link">Статистика</a>
+                  </li>
+
+                  <a href="#" class="close_mobile_toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" version="1.1" viewBox="0 0 752 752">
+                      <path d="m540.34 211.67c-8.5234-8.5234-21.785-8.5234-30.309 0l-134.03 134.02-134.02-134.02c-8.5234-8.5234-21.785-8.5234-30.309 0-8.5234 8.5234-8.5234 21.785 0 30.309l134.02 134.02-134.02 134.02c-8.5234 8.5234-8.5234 21.785 0 30.309 4.2617 4.2617 9.4727 6.1562 15.156 6.1562 5.6836 0 10.891-1.8945 15.156-6.1562l134.02-134.02 134.02 134.02c4.2617 4.2617 9.4727 6.1562 15.156 6.1562 5.6836 0 10.891-1.8945 15.156-6.1562 8.5234-8.5234 8.5234-21.785 0-30.309l-134.02-134.03 134.02-134.02c8.0508-8.5234 8.0508-21.785 0-30.309z" fill="#d2d2d2"/>
+                     </svg>
+                  </a>
+              </ul>
+              <div class="header_search">
+                <form action="">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="input_search"
+                      placeholder="Поиск"
+                    />
+                    <img
+                      src="images/content/search-icon.svg"
+                      alt=""
+                      class="search_icon"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <a href="#" class="mobile_open_toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" version="1.1" viewBox="0 0 752 752">
+                  <g fill="#d2d2d2">
+                   <path d="m213.21 287.2h325.59c15.863 0 30.52-8.4609 38.453-22.195 7.9297-13.738 7.9297-30.664 0-44.398-7.9336-13.738-22.59-22.199-38.453-22.199h-325.59c-15.859 0-30.52 8.4609-38.449 22.199-7.9297 13.734-7.9297 30.66 0 44.398 7.9297 13.734 22.59 22.195 38.449 22.195z"/>
+                   <path d="m538.79 331.6h-325.59c-15.859 0-30.52 8.4648-38.449 22.199-7.9297 13.738-7.9297 30.664 0 44.398 7.9297 13.738 22.59 22.199 38.449 22.199h325.59c15.863 0 30.52-8.4609 38.453-22.199 7.9297-13.734 7.9297-30.66 0-44.398-7.9336-13.734-22.59-22.199-38.453-22.199z"/>
+                   <path d="m538.79 464.8h-325.59c-15.859 0-30.52 8.4648-38.449 22.199-7.9297 13.738-7.9297 30.664 0 44.398 7.9297 13.738 22.59 22.199 38.449 22.199h325.59c15.863 0 30.52-8.4609 38.453-22.199 7.9297-13.734 7.9297-30.66 0-44.398-7.9336-13.734-22.59-22.199-38.453-22.199z"/>
+                  </g>
+                 </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+       
+
+        <section class="repeating_filter progress">
+          <div class="container">
+            <h2 class="header_title header_gta_title">Оценить мой компьютер</h2>
+            <form action="">
+              
+                <div id="video-card" class="tab_content_item active">
+                  <div class="filter_repeating_select">
+                    <div class="filter_item">
+                      <div class="filter_item_name">Процессор::</div>
+                      <a href="" class="select_btn">
+                        <img src="images/content/cpu-icon.svg" alt=""> Intel Core
+                        i5-4670K</a>
+                      <ul name="cpu" id="" class="select_list cpu_ul">
+                        <li value="">Intel Core i5-4670K</li>
+                        <li value="1">1</li>
+                        <li value="1">1</li>
+                        <li value="1">1</li>
+                      </ul>
+                    </div>
+                    <div class="filter_item">
+                      <div class="filter_item_name">Видеокарта:</div>
+                      <a href="" class="select_btn">
+                        <img src="images/content/vd-icon.svg" alt=""> GeForce GTX
+                        1080Ti</a>
+                      <ul name="Video-card" id="" class="select_list vc_ul">
+                        <li>GeForce GTX 1080Ti</li>
+                        <li value="1">1</li>
+                        <li value="1">1</li>
+                        <li value="1">1</li>
+                      </ul>
+                    </div>
+                    <div class="filter_item">
+                      <div class="filter_item_name">Оперативная память:</div>
+    
+                      <a href="" class="select_btn">
+                        <img src="images/content/ram-icon.svg" alt=""> 16 GB</a>
+                      <ul name="RAM" id="" class="select_list ram_ul">
+                        <li value="">16 GB</li>
+                        <li value="1">1</li>
+                        <li value="1">1</li>
+                        <li value="1">1</li>
+                      </ul>
+                    </div>
+                  </div>
+  
+                </div>
+              
+              
+            </form>
+            <div class="progress_box">
+              <div class="progress_flex">
+                <!-- one -->
+                <div class="progress_one">
+                  <div class="progress_img">
+                    <img src="images/shamshod/progress.svg" alt="img">
+                  </div>
+                  <div class="progress_title">Минимальные</div>
+                  <div class="progress_desc">Системные требования</div>
+                </div>
+                <!-- two -->
+                <div class="progress_two">
+                  <div class="progress_img">
+                    <img src="images/shamshod/progress2.svg" alt="img">
+                  </div>
+                  <div class="progress_title">Рекомендованные</div>
+                  <div class="progress_desc">Системные требования</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </header>
+
+      <!-- main -->
+      <main class="computer_main">
+        <section class="computer_section">
+            <div class="container">
+                <div class="computer_box">
+                    <!-- RATE COMPUTER -->
+                    <div class="computer_videocard">
+                        <h3 class="gta_title computer_title">Видеокарта: NVIDIA GeForce GTX 1080 Ti (Desktop)</h3>
+                        <div class="computer_flex">
+                            <div class="computer_left">
+                                <div class="computer_item">Место в рейтинге производительности</div>
+                                <div class="computer_item">Соотношение цена-качество</div>
+                                <div class="computer_item">Архитектура</div>
+                                <div class="computer_item">Тип</div>
+                                <div class="computer_item">Дата выхода</div>
+                                <div class="computer_item">Количество потоковых процессоров</div>
+                                <div class="computer_item">Технологический процесс</div>
+                                <div class="computer_item">Энергопотребление (TDP)</div>
+                            </div>
+                            <div class="computer_right">
+                                <div class="computer_item"><a href="#">37</a></div>
+                                <div class="computer_item"><a href="#">42.66</a></div>
+                                <div class="computer_item"><a href="#">Pascal</a></div>
+                                <div class="computer_item"><a href="#">Десктопная</a></div>
+                                <div class="computer_item"><a href="#">28 февраля 2017 (5 лет назад)</a></div>
+                                <div class="computer_item"><a href="#">3584</a></div>
+                                <div class="computer_item"><a href="#">16 нм</a></div>
+                                <div class="computer_item"><a href="#">250 Вт</a></div>
+                            </div>
+                        </div>
+
+                        <div class="fps">
+                          <div class="fps_item">
+                            
+                            <div class="fps_resolution ">1280×720</div>
+                          </div>
+                          <div class="fps_item">
+                           
+                            <div class="fps_resolution ">1920×1080</div>
+                          </div>
+                          <div class="fps_item">
+                             <div class="fps_resolution ">1920×1080</div>
+                          </div>
+                          <div class="fps_item">
+                            
+                            <div class="fps_resolution ">1920×1080</div>
+                          </div>
+                          <div class="fps_item">
+                            
+                            <div class="fps_resolution ">2560×1440</div>
+                          </div>
+                          <div class="fps_item">
+                           
+                            <div class="fps_resolution ">3840×2160</div>
+                          </div>
+                        </div>
+
+                        <div class="porgresses">
+                          <div class="progress_wrapper first">
+                            <div class="progress_bar" style="width: 54%;">
+        
+        
+                            </div>
+                            <div class="speed">GeForce GTX 1060 6 GB
+                              <span>+31.2%</span>
+                            </div>
+                            <div class="progress_bar_indicator hidden" style="left: calc(54% - 16px);">54</div>
+        
+
+                            <div class="parts" style="left: 18%;">
+                              <span style=" background-color:  #9363F8;"></span>
+                              <span style=" background-color:  #9363F8;"></span>
+                              <span style=" background-color:  #9363F8;"></span>
+                              <span style=" background-color:  #9363F8;"></span>
+
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        <div class="fps text_end">
+                          
+                          <div class="fps_item">
+                            
+                            <div class="fps_resolution ">RX 6900 XT</div>
+                          </div>
+                          <div class="fps_item">
+                            
+                            <div class="fps_resolution ">RX 6800 XT</div>
+                          </div>
+                          <div class="fps_item">
+                           
+                            <div class="fps_resolution ">RX 6600 XT</div>
+                          </div>
+                        </div>
+
+                        <div class="compuret_subtitle">Здесь приведены средние значения частоты кадров в секунду в большом наборе популярных игр в различных разрешениях:</div>
+                        <div class="computer_bottom_flex">
+                            <div class="computer_bottom_left">
+                                <div class="computer_bottom_item">Full HD</div>
+                                <div class="computer_bottom_item">1440p</div>
+                                <div class="computer_bottom_item">4K</div>
+                            </div>
+                            <div class="computer_bottom_right">
+                                <div class="computer_bottom_item"><a href="#">131</a></div>
+                                <div class="computer_bottom_item"><a href="#">89</a></div>
+                                <div class="computer_bottom_item"><a href="#">68</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LOW PRESET -->
+                    <div class="low_preset"> 
+                        <h3 class="gta_title low_preset_title">Full HD Low Preset</h3>
+                        <div class="low_preset_flex">
+                            <div class="low_preset_left">
+                                <div class="computer_bottom_item">Cyberpunk 2077</div>
+                            </div>
+                            <div class="low_preset_right">
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MEDIUM PRESET -->
+                    <div class="medium_preset">
+                        <h3 class="gta_title medium_preset_title">Full HD Medium Preset</h3>
+                        <div class="medium_preset_flex">
+                            <div class="medium_preset_left">
+                                <div class="computer_bottom_item">Assassin's Creed Odyssey</div>
+                                <div class="computer_bottom_item">Assassin's Creed Valhalla</div>
+                                <div class="computer_bottom_item">Battlefield 5</div>
+                                <div class="computer_bottom_item">Call of Duty: Modern Warfare</div>
+                                <div class="computer_bottom_item">Cyberpunk 2077</div>
+                                <div class="computer_bottom_item">Far Cry 5</div>
+                                <div class="computer_bottom_item">Far Cry New Dawn</div>
+                                <div class="computer_bottom_item">Forza Horizon 4</div>
+                                <div class="computer_bottom_item">Hitman 3</div>
+                                <div class="computer_bottom_item">Horizon Zero Dawn</div>
+                                <div class="computer_bottom_item">Red Dead Redemption 2</div>
+                                <div class="computer_bottom_item">Shadow of the Tomb Raider</div>
+                                <div class="computer_bottom_item">Watch Dogs: Legion</div>
+                            </div>
+                            <div class="medium_preset_right">
+                                <div class="computer_bottom_item"><a href="#">72</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">106</a></div>
+                                <div class="computer_bottom_item"><a href="#">78</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">82</a></div>
+                                <div class="computer_bottom_item"><a href="#">81</a></div>
+                                <div class="computer_bottom_item"><a href="#">100</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">56</a></div>
+                                <div class="computer_bottom_item"><a href="#">68</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HIGH PRESET -->
+                    <div class="high_preset">
+                        <h3 class="gta_title high_preset_title">Full HD Medium Preset</h3>
+                        <div class="high_preset_flex">
+                            <div class="high_preset_left">
+                                <div class="computer_bottom_item">Assassin's Creed Odyssey</div>
+                                <div class="computer_bottom_item">Assassin's Creed Valhalla</div>
+                                <div class="computer_bottom_item">Battlefield 5</div>
+                                <div class="computer_bottom_item">Call of Duty: Modern Warfare</div>
+                                <div class="computer_bottom_item">Cyberpunk 2077</div>
+                                <div class="computer_bottom_item">Far Cry 5</div>
+                                <div class="computer_bottom_item">Far Cry New Dawn</div>
+                                <div class="computer_bottom_item">Forza Horizon 4</div>
+                                <div class="computer_bottom_item">Hitman 3</div>
+                                <div class="computer_bottom_item">Horizon Zero Dawn</div>
+                                <div class="computer_bottom_item">Red Dead Redemption 2</div>
+                                <div class="computer_bottom_item">Shadow of the Tomb Raider</div>
+                                <div class="computer_bottom_item">Watch Dogs: Legion</div>
+                            </div>
+                            <div class="high_preset_right">
+                                <div class="computer_bottom_item"><a href="#">72</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">106</a></div>
+                                <div class="computer_bottom_item"><a href="#">78</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">82</a></div>
+                                <div class="computer_bottom_item"><a href="#">81</a></div>
+                                <div class="computer_bottom_item"><a href="#">100</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                                <div class="computer_bottom_item"><a href="#">56</a></div>
+                                <div class="computer_bottom_item"><a href="#">68</a></div>
+                                <div class="computer_bottom_item"><a href="#">30−35</a></div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="comapre_model_block">
+                  
+                    <div class="comapre_model_block_inner">
+          
+          
+          
+          
+                      <div class="comapre_info_item ">
+          
+                        <div class="compare_info_titles">
+                          <div class="general_title">Оценка пользователями </div>
+                        </div>
+                        <div class="compare_info_subtitles">
+                          Здесь Вы можете посмотреть оценку видеокарт пользователями, а также поставить свою оценку.
+          
+                        </div>
+          
+          
+                        <div class="compare_info_content ">
+          
+                          <div class="rating_item">
+                            <div class="rating_img">
+                              <img src="images/content/rating-1.svg" alt="">
+                            </div>
+                            <div class="rating_content">
+                              <div class="rating_text">
+                                Оцените NVIDIA GeForce GTX 1060 6 GB по шкале от 1 до 5 баллов:
+                              </div>
+                              <div class="rating_stars">
+          
+                                
+          
+                                <div class="star-rating">
+                                  <input type="radio" id="rate_star_1" name="rating1" value="1">
+                                  <label for="rate_star_1" class="star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                      <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                    </svg>
+                                  </label>
+                                  
+                                  <input type="radio" id="rate_star_2" name="rating1" value="2">
+                                  <label for="rate_star_2" class="star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                      <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                    </svg>
+                                  </label>
+          
+                                  <input type="radio" id="rate_star_3" name="rating1" value="3">
+                                  <label for="rate_star_3" class="star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                      <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                    </svg>
+                                  </label>
+          
+                                  <input type="radio" id="rate_star_4" name="rating1" value="4">
+                                  <label for="rate_star_4" class="star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                      <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                    </svg>
+                                  </label>
+                                  
+                                  <input type="radio" id="rate_star_5" name="rating1" value="5">
+                                  <label for="rate_star_5" class="star">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                      <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                    </svg>
+                                  </label>
+                                  
+                                  
+                               
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+          
+                        </div>
+          
+          
+          
+          
+          
+                      </div>
+          
+                    </div>
+                  
+                </div>
+                <!-- PROCESSOR INTEL -->
+                <div class="processor_intel">
+                  <h3 class="gta_title processor_intel_title">Процессор: Intel Core i5-4670</h3>
+                  <div class="processor_intel_flex">
+                    <div class="computer_left">
+                        <div class="computer_item">Место в рейтинге производительности</div>
+                        <div class="computer_item">Соотношение цена-качество</div>
+                        <div class="computer_item">Тип</div>
+                        <div class="computer_item">Дата выхода</div>
+                        <div class="computer_item">Ядер</div>
+                        <div class="computer_item">Потоков</div>
+                        <div class="computer_item">Технологический процесс</div>
+                        <div class="computer_item">Свободный множитель</div>
+                        <div class="computer_item">Энергопотребление (TDP)</div>
+                    </div>
+                    <div class="computer_right">
+                        <div class="computer_item"><a href="#">1148</a></div>
+                        <div class="computer_item"><a href="#">0.80</a></div>
+                        <div class="computer_item"><a href="#">Десктопный</a></div>
+                        <div class="computer_item"><a href="#">2 июня 2013 (9 лет назад)</a></div>
+                        <div class="computer_item"><a href="#">4</a></div>
+                        <div class="computer_item"><a href="#">4</a></div>
+                        <div class="computer_item"><a href="#">22 нм</a></div>
+                        <div class="computer_item"><a href="#">-</a></div>
+                        <div class="computer_item"><a href="#">84 Вт</a></div>
+                    </div>
+                  </div>  
+
+                  <div class="fps">
+                    <div class="fps_item fps_item_blue">
+                      
+                      <div class="fps_resolution ">1280×720</div>
+                    </div>
+                    <div class="fps_item fps_item_blue">
+                     
+                      <div class="fps_resolution ">1920×1080</div>
+                    </div>
+                    <div class="fps_item fps_item_blue">
+                       <div class="fps_resolution ">1920×1080</div>
+                    </div>
+                    <div class="fps_item fps_item_blue">
+                      
+                      <div class="fps_resolution ">1920×1080</div>
+                    </div>
+                    <div class="fps_item fps_item_blue">
+                      
+                      <div class="fps_resolution ">2560×1440</div>
+                    </div>
+                    <div class="fps_item fps_item_blue">
+                     
+                      <div class="fps_resolution ">3840×2160</div>
+                    </div>
+                  </div>
+                  <div class="porgresses ">
+                    <div class="progress_wrapper second">
+                      <div class="progress_bar" >
+  
+  
+                      </div>
+                      <div class="speed">GeForce GTX 1060 6 GB
+                        <span>+31.2%</span>
+                      </div>
+                      <div class="progress_bar_indicator hidden" style="left: calc(54% - 16px);">10</div>
+  
+
+                      <div class="parts" style="left: 18%;">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  
+                  </div>
+                  <div class="fps text_end">
+                          
+                    <div class="fps_item fps_item_blue">
+                      
+                      <div class="fps_resolution ">RX 6900 XT</div>
+                    </div>
+                    <div class="fps_item fps_item_blue">
+                      
+                      <div class="fps_resolution ">RX 6800 XT</div>
+                    </div>
+                    <div class="fps_item fps_item_blue">
+                     
+                      <div class="fps_resolution ">RX 6600 XT</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="comapre_model_block">
+                  
+                    <div class="comapre_model_block_inner">
+          
+          
+          
+          
+                      <div class="comapre_info_item ">
+          
+                        <div class="compare_info_titles">
+                          <div class="general_title">Оценка пользователями </div>
+                        </div>
+                        <div class="compare_info_subtitles">
+                          Здесь Вы можете посмотреть оценку видеокарт пользователями, а также поставить свою оценку.
+          
+                        </div>
+          
+          
+                        <div class="compare_info_content ">
+          
+                         
+                          <div class="rating_item">
+                            <div class="rating_img">
+                              <img src="images/content/rating-2.svg" alt="">
+                            </div>
+                            <div class="rating_content">
+                              <div class="rating_text">
+                                Оцените NVIDIA GeForce GTX 1650 по шкале от 1 до 5 баллов:
+                              </div>
+                              <div class="star-rating">
+                                <input type="radio" id="rate_star_21" name="rating" value="1">
+                                <label for="rate_star_2_1" class="star">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                    <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                  </svg>
+                                </label>
+                                
+                                <input type="radio" id="rate_star_2_2" name="rating" value="2">
+                                <label for="rate_star_2_2" class="star">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                    <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                  </svg>
+                                </label>
+          
+                                <input type="radio" id="rate_star_2_3" name="rating" value="3">
+                                <label for="rate_star_2_3" class="star">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                    <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                  </svg>
+                                </label>
+          
+                                <input type="radio" id="rate_star_2_4" name="rating" value="4">
+                                <label for="rate_star_2_4" class="star">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                    <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                  </svg>
+                                </label>
+                                
+                                <input type="radio" id="rate_star_2_5" name="rating" value="5">
+                                <label for="rate_star_2_5" class="star">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rating__icon">
+                                    <path d="M16.1794 7.60581L21.7164 8.13703C23.643 8.32187 24.2339 10.2038 22.7462 11.4403L18.4113 15.043L20.0206 20.9121C20.5491 22.8395 18.9095 24.0063 17.2672 22.8463L12.0001 19.1258L6.73302 22.8463C5.09744 24.0016 3.45113 22.8397 3.97968 20.9121L5.58892 15.043L1.25409 11.4403C-0.239863 10.1986 0.348679 8.3227 2.28356 8.13703L7.81951 7.60581L10.2585 1.9825C11.0223 0.221506 12.9784 0.222389 13.7416 1.98269L16.1794 7.60581Z" fill="#99A2AD"></path>
+                                  </svg>
+                                </label>
+                                
+                                
+                             
+                               
+                              </div>
+                            </div>
+                          </div>
+          
+          
+                        </div>
+          
+          
+          
+          
+          
+                      </div>
+          
+                    </div>
+                  
+                </div>
+
+                <div class="kommets">
+                  <div class="komments_box">
+                    <!-- title -->
+                    <h3 class="gta_title komments_title">Советы и комментарии</h3>
+                    <!--  descrp  -->
+                    <div class="gta_description komments_description">
+                      <p>Здесь можно задать вопрос о GeForce GTX 1060 6 GB или GeForce GTX 1650, согласиться или не согласиться с нашими оценками, или сообщить 
+                        об ошибках и неточностях на сайте.</p>
+                    </div>
+    
+                    <!-- form -->
+                    <div class="form_box">
+                      <form action="" class="komments_form">
+                        <div class="komments_form_flex">
+                          <!-- left -->
+                          <div class="komments_form_left">
+                            <div class="komments_left_user"></div>
+                          </div>
+                          <!-- right -->
+                          <div class="komments_form_right">
+                            <div class="komments_input_box"><input type="text" class="komments_input_one" placeholder="Присоедениться к обсуждению"></div>
+                            <div class="komments_input_flex">
+                              <div class="komments_input_box2"><input type="text" class="komments_input_two" placeholder="Ваше имя"></div>
+                              <div class="komments_input_box3"><input type="text" class="komments_input_three" placeholder="Ваш E-mail"></div>
+                              <div class="komments_btn_box"><button class="komments_form_btn">Отправить</button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+    
+                    <!-- komments2 -->
+    
+                    <!-- title -->
+                    <h3 class="gta_title komments_bottom_title">Комментарии пользователей</h3>
+                    <!--  descrp  -->
+                    <div class="gta_description komments_description">
+                    </div>
+    
+                    <div class="form_box2">
+                      <form action="" class="komments_form">
+                        <div class="komments_form_flex">
+                          <!-- left -->
+                          <div class="komments_form_left">
+                            <div class="komments_left_user"><img src="images/shamshod/user.svg" alt="img"></div>
+                          </div>
+                          <!-- right -->
+                          <div class="komments_form_right">
+                            <div class="komments_right_top">
+                              <div class="desc1">German Irgigitov</div>
+                              <div class="desc2">2 года назад</div>
+                            </div>
+                            <div class="komments_right_bottom">
+                              <div>Купил б/у 1060 3гб за 110 долл. Доволен как слон. ))</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="komments_form_flex">
+                          <!-- left -->
+                          <div class="komments_form_left">
+                            <div class="komments_left_user"><img src="images/shamshod/user-2.svg" alt="img"></div>
+                          </div>
+                          <!-- right -->
+                          <div class="komments_form_right">
+                            <div class="komments_right_top">
+                              <div class="desc1">DIE KRUPPS</div>
+                              <div class="desc2">2 года назад</div>
+                            </div>
+                            <div class="komments_right_bottom">
+                              <div>Купил б/у 1060 3гб за 110 долл. Доволен как слон. ))</div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+      </main>
+      <!-- /main -->
+
+      <!-- footer -->
+      <footer>
+        <div class="footer_languages">
+          <div class="container">
+            <div class="footer_languages_inner">
+              <div class="footer_languages_logo">
+                <img src="images/header/logo.svg" alt="" />
+              </div>
+              <div class="footer_languages_list">
+                <ul class="languages_list">
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">Русский</a>
+                  </li>
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">English</a>
+                  </li>
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">Español</a>
+                  </li>
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">Português</a>
+                  </li>
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">Deutsch</a>
+                  </li>
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">Français</a>
+                  </li>
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">Italiano</a>
+                  </li>
+                  <li class="languages_list_item">
+                    <a href="" class="languages_list_link">Polski</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rules">
+          <div class="container">
+            <div class="rules_inner">
+              <div class="rules_links">
+                <a href="" class="rules_link">О сайте</a>
+                <a href="" class="rules_link">Политика конфиденциальности</a>
+              </div>
+              <div class="rules_text">
+                Нашли ошибку? Выделите её и нажмите Ctrl+Enter. <br> Игры
+                протестированы <a href="#" class="rules_link rules_link_small">notebookcheck.net</a> <br>  Наши партнёры: каталог
+                инструкций  <a href="#" class="rules_link rules_link_underline">emanuals.org</a> , справочник организаций <a href="#" class="rules_link">otzywy.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Jquery -->
+    <script src="libs/jquery-3.6.0.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
